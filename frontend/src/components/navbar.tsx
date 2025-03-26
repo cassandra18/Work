@@ -14,7 +14,12 @@ import { useState } from "react";
 
 const Navbar: React.FC = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [aboutDropdownOpen, setAboutDropdownOpen] = useState(false);
+    const [admissionDropdownOpen, setAdmissionDropdownOpen] = useState(false);
+
     const toggleMenu = () => setMenuOpen(!menuOpen);
+    const toggleAboutDropdown = () => setAboutDropdownOpen(!aboutDropdownOpen);
+    const toggleAdmissionDropdown = () => setAdmissionDropdownOpen(!admissionDropdownOpen)
 
   return (
     <div>
@@ -94,20 +99,84 @@ const Navbar: React.FC = () => {
                     `text-[#0C834E] hover:text-black ${isActive? "underline underline-offset-6 decoration-2 decoration-[#0C834E] text-black " : " "}`}>
                     Home
                 </NavLink>
-                <NavLink to="/about" className={({ isActive}) =>
-                    `text-[#0C834E] hover:text-black ${isActive? "underline underline-offset-6 decoration-2 decoration-[#0C834E] text-black " : " "}`}>
-                    About Us
-                </NavLink>
-                <NavLink to="/admission" className={({ isActive}) =>
-                   `text-[#0C834E] hover:text-black ${isActive? "underline underline-offset-6 decoration-2 decoration-[#0C834E] text-black " : " "}`}>
-                    Admission
-                </NavLink>
+
+
+                {/* About Us with Dropdown */}
+                <div className="relative"
+                onMouseEnter={() => setAboutDropdownOpen(true)}
+                onMouseLeave={() => setAboutDropdownOpen(false)}>
+                    <button
+                    onClick={toggleAboutDropdown}
+                        className="text-[#0C834E] whitespace-nowrap hover:text-black focus:outline-none">
+                        About Us ▼
+                    </button>
+
+                    {aboutDropdownOpen && (
+                        <div className="absolute left-1/2 translate-x-[-50%] w-[600px] bg-white shadow-lg rounded-lg py-2 z-50"
+                            
+                        >
+                          <div className="flex justify-between px-3 py-2">
+                            <div>
+                              <p className="text-black border-b border-[rgba(0,0,0,0.3)] mb-2">About CBC Kericho</p>
+                            <NavLink to="/about/profile" className="block py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm">Our Profile</NavLink>
+                            <NavLink to="/about/history" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm">Our History</NavLink>
+                            <NavLink to="/about/vision" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm">Vision, Mission & Values</NavLink>
+                            <NavLink to="/about/administration" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm">School Administration</NavLink>
+                            <NavLink to="/about/policies" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm">School Policies</NavLink>
+                            </div>
+
+                            <div>
+                            <p className="text-black border-b border-[rgba(0,0,0,0.3)] mb-2">Information Desk</p>
+                            <NavLink to="/about/news" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm">News and Events</NavLink>
+                            <NavLink to="/about/games" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm">Games and Sports</NavLink>
+                            <NavLink to="/about/clubs" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm">Clubs and Societies</NavLink>
+                            <NavLink to="/about/leadership" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm">Student Leadership</NavLink>
+                            <NavLink to="/about/facilities" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm">Facilities and Amenities</NavLink>
+                            
+                            </div>
+
+                            <div>
+                            <p className="text-black border-b border-[rgba(0,0,0,0.3)] mb-2">More</p>
+                            <NavLink to="/about/results" className="block py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm">KCPE Results</NavLink>
+                            <NavLink to="/about/departments" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm">Departments</NavLink>
+                            
+                            </div>
+                            </div>
+                            
+                        </div>
+                    )}
+                </div>
+
+                    {/* Desktop Admission with Dropdown */}
+                    <div className="relative"
+                      onMouseEnter={() => setAdmissionDropdownOpen(true)}
+                      onMouseLeave={() => setAdmissionDropdownOpen(false)}>
+                    <button onClick={toggleAdmissionDropdown} className="flex items-center justify-between text-[#0C834E] hover:text-black w-full">
+                        Admission {admissionDropdownOpen ? "▲" : "▼"}
+                    </button>
+
+                    {admissionDropdownOpen && (
+                        <div className=" absolute w-[200px] bg-white shadow-lg rounded-lg py-2 z-50 "
+                            
+                        >
+                          <div className="flex flex-col justify-between px-2">
+                            <div>
+                            <NavLink to="/admission/overview" className="block py-2 px-1 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm font-medium">Overview</NavLink>
+                            <NavLink to="/admission/criteria" className="block  py-2 px-1 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm font-medium">Admission Criteria</NavLink>
+                            <NavLink to="/admission/term-dates" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm font-medium">Term dates</NavLink>
+                            <NavLink to="/admission/fee" className="block  py-2 px-1 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm font-medium">Fee Payment</NavLink>
+                            <NavLink to="/admission/apply" className="block  py-2 px-1 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm font-medium">How To Apply</NavLink>
+                            </div>
+                            </div>
+                        </div>
+                    )}
+                    </div>
                 <NavLink to="/gallery" className={({ isActive}) =>
                     `text-[#0C834E] hover:text-black ${isActive? "underline underline-offset-6 decoration-2 decoration-[#0C834E] text-black " : " "}`}>
                     Gallery
                 </NavLink>
                 <NavLink to="/contact" className={({ isActive}) =>
-                    `text-[#0C834E] hover:text-black ${isActive? "underline underline-offset-6 decoration-2 decoration-[#0C834E] text-black " : " "}`}>
+                    `text-[#0C834E] whitespace-nowrap mr-1 hover:text-black ${isActive? "underline underline-offset-6 decoration-2 decoration-[#0C834E] text-black " : " "}`}>
                     Contact Us
                 </NavLink>
             </div>
@@ -125,8 +194,68 @@ const Navbar: React.FC = () => {
 
                 <nav className="flex flex-col space-y-6 mt-12 text-l font-semibold">
                 <NavLink to="/" onClick={toggleMenu} className="text-[#0C834E] hover:text-black">Home</NavLink>
-                <NavLink to="/about" onClick={toggleMenu} className="text-[#0C834E] hover:text-black">About Us</NavLink>
-                <NavLink to="/admission" onClick={toggleMenu} className="text-[#0C834E] hover:text-black">Admission</NavLink>
+                    
+                    {/* Mobile About Us with Dropdown */}
+                    <button onClick={toggleAboutDropdown} className="flex items-center justify-between text-[#0C834E] hover:text-black w-full">
+                        About Us {aboutDropdownOpen ? "▲" : "▼"}
+                    </button>
+                    
+                    {aboutDropdownOpen && (
+                        <div className="ml-4 space-y-2"
+                            
+                        >
+                          <div className="flex flex-col justify-between">
+                            <div>
+                              <p className="text-black border-b border-[rgba(0,0,0,0.3)] mb-2">About CBC Kericho</p>
+                            <NavLink to="/about/profile" className="block py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm font-medium">Our Profile</NavLink>
+                            <NavLink to="/about/history" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm font-medium">Our History</NavLink>
+                            <NavLink to="/about/vision" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm font-medium">Vision, Mission & Values</NavLink>
+                            <NavLink to="/about/administration" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm font-medium">School Administration</NavLink>
+                            <NavLink to="/about/policies" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm  font-medium">School Policies</NavLink>
+                            </div>
+
+                            <div>
+                            <p className="text-black border-b border-[rgba(0,0,0,0.3)] mb-2">Information Desk</p>
+                            <NavLink to="/about/news" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm font-medium">News and Events</NavLink>
+                            <NavLink to="/about/games" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm font-medium">Games and Sports</NavLink>
+                            <NavLink to="/about/clubs" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm font-medium">Clubs and Societies</NavLink>
+                            <NavLink to="/about/leadership" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm font-medium">Student Leadership</NavLink>
+                            <NavLink to="/about/facilities" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm font-medium">Facilities and Amenities</NavLink>
+                            
+                            </div>
+
+                            <div>
+                            <p className="text-black border-b border-[rgba(0,0,0,0.3)] mb-2">More</p>
+                            <NavLink to="/about/results" className="block py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm font-medium">KCPE Results</NavLink>
+                            <NavLink to="/about/departments" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm font-medium">Departments</NavLink>
+                            
+                            </div>
+                            </div>
+                            
+                        </div>
+                    )}
+
+                
+                    {/* Mobile Admission with Dropdown */}
+                    <button onClick={toggleAdmissionDropdown} className="flex items-center justify-between text-[#0C834E] hover:text-black w-full">
+                        Admission {admissionDropdownOpen ? "▲" : "▼"}
+                    </button>
+
+                    {admissionDropdownOpen && (
+                        <div className="ml-4 space-y-2"
+                            
+                        >
+                          <div className="flex flex-col justify-between">
+                            <div>
+                            <NavLink to="/admission/overview" className="block py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm font-medium">Overview</NavLink>
+                            <NavLink to="/admission/criteria" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm font-medium">Admission Criteria</NavLink>
+                            <NavLink to="/admission/term-dates" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm font-medium">Term dates</NavLink>
+                            <NavLink to="/admission/fee" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm font-medium">Fee Payment</NavLink>
+                            <NavLink to="/admission/apply" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm font-medium">How To Apply</NavLink>
+                            </div>
+                            </div>
+                        </div>
+                    )}
                 <NavLink to="/gallery" onClick={toggleMenu} className="text-[#0C834E] hover:text-black">Gallery</NavLink>
                 <NavLink to="/contact" onClick={toggleMenu} className="text-[#0C834E] hover:text-black">Contact Us</NavLink>
                 </nav>
