@@ -69,9 +69,10 @@ const Navbar: React.FC = () => {
           </ul>
         </div>
 
+        {/*Contacts  */}
         <div>
           <ul className="flex flex-row md:flex-col justify-evenly ">
-            <li className="flex items-center md:text-lg">
+            <li className="flex items-center md:text-lg ">
               <FaPhoneAlt className="mr-2" />
               0113120575
             </li>
@@ -87,7 +88,7 @@ const Navbar: React.FC = () => {
       <div className="border-b-6 border-b-[rgba(19,63,19,0.5)] flex items-center justify-between md:justify-evenly">
        {/* Logo */}
         <div className="flex items-center">
-            <img src="/images/school-logo.png" alt='school-logo' className="w-24 md:w-36 h-auto"/>
+            <img src="/images/school-logo.png" alt='school-logo' className="w-24 md:w-28 h-auto"/>
             <h1 className="text-xl md:text-2xl font-bold text-[#0C834E]">C.B.C KERICHO</h1>
         </div>
 
@@ -108,7 +109,7 @@ const Navbar: React.FC = () => {
                     <button
                     onClick={toggleAboutDropdown}
                         className="text-[#0C834E] whitespace-nowrap hover:text-black focus:outline-none">
-                        About Us ▼
+                        About Us {aboutDropdownOpen ? "▲" : "▼"}
                     </button>
 
                     {aboutDropdownOpen && (

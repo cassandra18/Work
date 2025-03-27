@@ -14,3 +14,27 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+/* Style the Swiper navigation buttons */
+.swiper-button-prev,
+.swiper-button-next {
+    width: 40px !important;
+    height: 40px !important;
+    background-color: transparent; /* Default: No background */
+    border-radius: 50%; /* Make it circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Add a background on hover */
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    background-color: rgba(0, 0, 0, 0.5); /* Black background on hover */
+}
+
+/* Ensure the arrows are visible and smaller */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 20px !important; /* Decrease arrow size */
+}
