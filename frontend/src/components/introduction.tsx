@@ -28,9 +28,15 @@ const Introduction: React.FC = () => {
                 <div className='md:max-w-1/2 flex flex-col gap-4'>
                     <p className=''>CBC Kericho Primary School is a leading institution dedicated to providing high-quality education under the Competency-Based Curriculum (CBC). Located in a serene environment that fosters both academic and personal growth, the school is committed to nurturing young minds and shaping a brighter future for every learner. With a strong foundation in academic excellence, moral integrity, and holistic development, CBC Kericho Primary School ensures that students receive a well-rounded education that prepares them for future success.
 
-                    At CBC Kericho Primary School, education goes beyond textbooks. The school embraces a learner-centered approach where students are encouraged to think critically, solve problems, and apply knowledge to real-life situations. This hands-on method of teaching ensures that learners do not merely memorize facts but develop practical skills that will benefit them throughout their lives. Teachers play a crucial role in this process by guiding and mentoring students, ensuring they understand and apply what they learn in meaningful ways.</p>
-                    <Link to='/about' className='text-blue-400 hover:text-blue-700'>Read More...</Link>
-                   {/* Application Section */}
+                    At CBC Kericho Primary School, education goes beyond textbooks. The school embraces a learner-centered approach where students are encouraged to think critically, solve problems, and apply knowledge to real-life situations. This hands-on method of teaching ensures that learners do not merely memorize facts but develop practical skills that will benefit them throughout their lives. Teachers play a crucial role in this process by guiding and mentoring students, ensuring they understand and apply what they learn in meaningful ways.
+                    </p>
+                    
+                   <Link 
+                    to='/about' 
+                    className='relative text-[#0C834E]  hover:text-blue-700'>
+                    READ MORE...
+                    </Link>
+                    {/* Application Section */}
                     <div className='relative flex justify-center items-center  rounded-lg mx-auto w-fit p-1  md:p-8 bg-cover bg-center'
                     style={{backgroundImage: `url('/images/students.jpeg')`}}>
 
