@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import {
   FaBook,
   FaUserGraduate,
@@ -7,7 +7,7 @@ import {
   FaSchool,
   FaTrophy,
 } from "react-icons/fa";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 
 const facilities = [
   {
@@ -49,17 +49,30 @@ const facilities = [
 ];
 
 const Facilities: React.FC = () => {
+  const [activeIndex, setActiveIndex] = React.useState<number | null>(0);
+
+  const handleImageClick = (index: number) => {
+    if (activeIndex === index) {
+      setActiveIndex(null);
+    } else {
+    setActiveIndex(index);
+    }
+  }
+
   return (
-    <div style={{ backgroundImage: `url('/images/facilities2.jpeg')` }}
-    className="relative bg-cover bg-center flex flex-col justify-center items-center text-white ">
-    
-    {/* Overlay */}
-    <div className="absolute inset-0 bg-[#0C834E] opacity-50 backdrop-blur-md"></div>
+    <div
+      style={{ backgroundImage: `url('/images/facilities2.jpeg')` }}
+      className="poppins-regular relative bg-cover bg-center flex flex-col justify-center items-center text-white my-10 "
+    >
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-[#0C834E] opacity-50 backdrop-blur-md"></div>
       {/* Facilities Section - Bulletin Board Style */}
-      <div className="container mx-auto px-6 mt-10 z-10">
+      <div className="container mx-auto mt-10 z-10">
         <div className="rounded-lg p-6 shadow-xl">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-[#9dffd3] mb-6 relative">
-            <span className="relative z-10 drop-shadow-md">FACILITIES WE OFFER</span>
+          <h2 className=" text-3xl md:text-4xl lg:text-5xl font-bold text-center text-[#9dffd3] mb-6 relative">
+            <span className="poppins-bold relative z-10 drop-shadow-md">
+              FACILITIES WE OFFER
+            </span>
 
             {/* Animated underline */}
             <motion.div
@@ -69,32 +82,52 @@ const Facilities: React.FC = () => {
               transition={{ duration: 1, ease: "easeInOut" }}
             ></motion.div>
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {facilities.map((facility, index) => {
-              const ref = useRef(null);
-              const isInView = useInView(ref, { once: true, margin: "-100px" });
+          <p className="text-center text-lg text-[#fff6f6]  my-4 mx-auto max-w-lg">
+            Our school provides a well-rounded learning environment with modern
+            facilities, ensuring students excel academically and grow
+            holistically through sports, mentorship, and digital learning.
+          </p>
 
+          {/* Grid for medium and large screens */}
+          <div className="hidden md:grid md:grid-cols-2 gap-6">
+            {facilities.map((facility, index) => {
               return (
                 <motion.div
-                  ref={ref}
                   key={index}
                   className="flex gap-4 items-start p-4 border-l-4 border-[#23c87e] bg-white shadow-md rounded-md transition hover:bg-[#e8f5e9]"
-                  animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
+                  initial={{ opacity: 0, y: 20, scale: 0.95 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  transition={{ duration: 0.5, ease: "easeInOut" }}
                 >
-                  <motion.div
-                    className="text-4xl text-[#0C834E]"
-                    animate={isInView ? { scale: 1.2 } : { scale: 1 }}
-                    transition={{ type: "spring", stiffness: 200 }}
-                  >
+                  <motion.div className="text-4xl text-[#0C834E]">
                     {facility.icon}
                   </motion.div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-800">{facility.title}</h3>
+                    <h3 className="text-xl font-bold text-gray-800">
+                      {facility.title}
+                    </h3>
                     <p className="text-gray-600 mt-1">{facility.description}</p>
                   </div>
                 </motion.div>
               );
             })}
+          </div>
+
+          {/* Small Device Layout */}
+          <div className="flex items-center md:hidden w-full slider-facilities">
+            {facilities.map((facility, index) => (
+              <div 
+              key={index}
+              className={`slider-div ${activeIndex === index ? "active" : ""}`}
+              onClick={() => handleImageClick(index)}
+              >
+                <div className="icon-container text-xs text-[#0C834E]">{facility.icon}</div>
+                <h3 className="title text-sm font-bold text-gray-800 mt-2">
+                  {facility.title}
+                </h3>
+                <p className="description text-gray-600 mt-1">{facility.description}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>

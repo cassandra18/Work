@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 @import "tailwindcss";
 
 :root {
@@ -18,36 +20,210 @@
   -ms-overflow-style: none; /* IE 10+ */
 }
 body {
-    overflow-y: scroll;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE 10+ */
+overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
 }
 
 body::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Edge */
-  }
+  display: none; /* Chrome, Safari, Edge */
+}
 
 /* Style the Swiper navigation buttons */
 .swiper-button-prev,
 .swiper-button-next {
-    width: 40px !important;
-    height: 40px !important;
-    background-color: transparent; /* Default: No background */
-    border-radius: 50%; /* Make it circular */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s ease-in-out;
+  width: 40px !important;
+  height: 40px !important;
+  background-color: transparent; /* Default: No background */
+  border-radius: 50%; /* Make it circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease-in-out;
 }
 
 /* Add a background on hover */
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
-    background-color: rgba(0, 0, 0, 0.5); /* Black background on hover */
+  background-color: rgba(0, 0, 0, 0.5); /* Black background on hover */
 }
 
 /* Ensure the arrows are visible and smaller */
 .swiper-button-prev::after,
 .swiper-button-next::after {
-    font-size: 20px !important; /* Decrease arrow size */
+  font-size: 20px !important; /* Decrease arrow size */
 }
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.kanit-regular {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kanit-medium {
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.kanit-semibold {
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.kanit-bold {
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.kanit-extrabold {
+  font-family: "Kanit", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.kanit-black {
+  font-family: "Kanit", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.kanit-thin-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.kanit-extralight-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.kanit-light-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.kanit-regular-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+/* Show slider on small screens and hide on medium and larger screens */
+@media (max-width: 650px) {
+    .slider-facilities {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+  
+  @media (min-width: 651px) {
+    .slider-facilities {
+      display: none;
+    }
+  }
+  
+  .slider-div {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    height: 30vh;
+    width: 80%;
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+  }
+  /* Scale down the icon size */
+.icon-container {
+    font-size: 1.5rem; /* Smaller icon size */
+  }
+
+  /* Description adjustments */
+.description {
+    font-size: 0.75rem; /* Smaller description size */
+    margin-top: 2px; /* Slight space between title and description */
+    text-align: center;
+  }
+  
+
+  /* Title adjustments */
+.title {
+    font-size: 0.875rem; /* Smaller title size */
+    margin-top: 2px; /* Slight space between icon and title */
+    text-align: center;
+  }
+  /* Apply different sizes for specific child elements */
+  @media (max-width: 650px) {
+    .slider-facilities .slider-div:first-child,
+    .slider-facilities .slider-div:last-child {
+      height: 20vh;
+      width: 70%;
+    }
+  
+    .slider-facilities .slider-div:nth-child(2),
+    .slider-facilities .slider-div:nth-child(5) {
+      height: 28vh;
+      width: 75%;
+    }
+  
+    .slider-facilities .slider-div:nth-child(3),
+    .slider-facilities .slider-div:nth-child(4) {
+      height: 36vh;
+      width: 85%;
+    }
+  
+    .slider-div.active {
+      width: 60vw !important;
+      height: auto !important;
+      z-index: 1;
+      padding-left: 2px;
+      padding-right: 4px;
+    }
+  }
+  

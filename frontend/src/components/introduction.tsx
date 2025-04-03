@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Introduction: React.FC = () => {
     return (
-        <div className='mt-10 max-w-7xl mx-auto flex justify-center'>
+        <div className='mt-10 max-w-7xl mx-auto flex justify-center poppins-light'>
             <div className='flex flex-col-reverse md:flex-row  mx-6 gap-4 md:gap-10 xl:gap-32 items-center md:items-start'>
                 {/* Motto section */} 
                 <div className='relative flex flex-col rounded-lg shadow-2xl p-1 max-w-sm mb-7  '>
