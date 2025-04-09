@@ -60,9 +60,10 @@ const Facilities: React.FC = () => {
   }
 
   return (
+    <>
     <div
       style={{ backgroundImage: `url('/images/facilities2.jpeg')` }}
-      className="poppins-regular relative bg-cover bg-center flex flex-col justify-center items-center text-white my-10 "
+      className="poppins-regular relative bg-cover bg-center flex flex-col justify-center items-center text-white mt-10 "
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-[#0C834E] opacity-50 backdrop-blur-md"></div>
@@ -82,7 +83,7 @@ const Facilities: React.FC = () => {
               transition={{ duration: 1, ease: "easeInOut" }}
             ></motion.div>
           </h2>
-          <p className="text-center text-lg text-[#fff6f6]  my-4 mx-auto max-w-lg">
+          <p className="text-center text-md md:text-lg  text-[#fff6f6]  my-4 mx-auto max-w-lg">
             Our school provides a well-rounded learning environment with modern
             facilities, ensuring students excel academically and grow
             holistically through sports, mentorship, and digital learning.
@@ -132,6 +133,8 @@ const Facilities: React.FC = () => {
         </div>
       </div>
     </div>
+    <div className="bg-gradient-to-b from-white to-gray-400 h-20"></div>
+    </>
   );
 };
 
