@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
       <div className="bg-green-800 absolute inset-0 opacity-50"></div>
 
       {/* Content */}
-      <div className="flex items-center">
+      <div className="flex items-start justify-center lg:justify-start gap-20 px-4 max-w-7xl mx-auto">
         <div className="hidden lg:flex justify-center items-center mb-4">
             <div    className="relative">
                 <img src="/images/school-logo.png" alt="Logo" className="lg:h-44 lg:w-44 relative" />
@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
                 <li className="flex items-center hover:text-[#9dffd3]"> <MdMarkunreadMailbox className="mr-3 text-xl "/> P.O BOX 12345</li>
                 <li className="flex items-center hover:text-[#9dffd3]"> <FaPhoneAlt className="mr-3"/> 0113120575</li>
                 <li className="flex items-center hover:text-[#9dffd3]"><IoIosMail className="mr-3 "/> cassandralelei013@gmail.com</li>
-                <li className="flex items-center hover:text-[#9dffd3] whitespace-nowrap "><IoMdClock className="mr-3 " /> Open from Mon-Sat 8:00am - 5:00pm</li>
+                <li className="flex items-start hover:text-[#9dffd3] leading-snug break-words text-left"><IoMdClock className="mr-3 " /> Open from Mon-Sat 8:00am - 5:00pm</li>
             </ul>
             </div>
 
