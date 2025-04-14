@@ -40,7 +40,7 @@ const HeroSection: React.FC = () => {
                             {index === activeIndex && (
                                 <>
                                     <motion.h1 
-                                        className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0C834E]"
+                                        className="text-3xl md:text-4xl lg:text-5xl poppins-bold text-[#009f58]"
                                         initial={{ opacity: 0, y: -50 }}
                                         animate={{ opacity: 1, y: 0 }}
                                         exit={{ opacity: 0, y: -50 }} 
