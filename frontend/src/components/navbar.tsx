@@ -77,7 +77,7 @@ const Navbar: React.FC = () => {
               0113120575
             </li>
             <li className="flex items-center md:text-lg">
-              <IoIosMail className="mr-2" />
+              <IoIosMail className="mr-2 text-2xl" />
               info@cbckericho.jn.ke
             </li>
           </ul>

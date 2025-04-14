@@ -49,7 +49,7 @@ const Introduction: React.FC = () => {
                             transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
                         >Ready to join us?
                         </motion.h2>
-                        <Link to='application' className='flex flex-row gap-2 justify-center gap-x-2 whitespace-nowrap min-w-[max-content] items-center border z-1 border-white hover:border-green-500 text-white md:text-lg font-bold p-1 rounded-sm ml-4'><GiNotebook className='font-semibold' /> How to Apply</Link>
+                        <Link to='/application' className='flex flex-row gap-2 justify-center gap-x-2 whitespace-nowrap min-w-[max-content] items-center border z-1 border-white hover:border-green-500 text-white md:text-lg font-bold p-1 rounded-sm ml-4'><GiNotebook className='font-semibold' /> How to Apply</Link>
                     </div>
                 </div>
 

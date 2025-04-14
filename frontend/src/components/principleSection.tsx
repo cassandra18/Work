@@ -23,7 +23,7 @@ const PricipleSection: React.FC = () => {
                     <h2 className='block lg:hidden bg-[#0C834E] px-2 py-1 text-3xl text-center text-[#9dffd3] poppins-bold max-w-[max-content] '>
                         EMBODIMENT OF HOPE
                     </h2>
-                    <p className="md:text-xl text-gray-200 leading-relaxed px-2 ">
+                    <p className="md:text-lg text-gray-200 leading-relaxed px-2 ">
                     Mr. John Kiprono is the dedicated principal of CBC Kericho Primary and Junior Secondary School. 
                     With a strong passion for education and over 15 years of leadership experience, he is committed 
                     to nurturing holistic learners through the CBC curriculum. Known for his firm yet approachable 
@@ -33,6 +33,7 @@ const PricipleSection: React.FC = () => {
                     
                 </div>
             </div>
+            <div className="hidden md:block bg-gradient-to-b from-gray-500 to-green-800 h-20"></div>
         </div>
     )
 }

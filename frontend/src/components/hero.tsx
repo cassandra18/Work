@@ -61,7 +61,7 @@ const HeroSection: React.FC = () => {
 
                                     <motion.a 
                                         href={slide.link}
-                                        className="mt-6 px-6 py-3 bg-blue-400 hover:bg-blue-700 text-white rounded-lg font-semibold transition-all"
+                                        className="mt-6 px-6 py-3 bg-blue-400 hover:bg-blue-700 text-[#9dffd3] rounded-lg font-semibold transition-all"
                                         initial={{ opacity: 0, y: 50 }}
                                         animate={{ opacity: 1, y: 0 }}
                                         exit={{ opacity: 0, y: 50 }} 

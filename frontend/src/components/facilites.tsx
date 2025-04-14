@@ -133,7 +133,7 @@ const Facilities: React.FC = () => {
         </div>
       </div>
     </div>
-    <div className="bg-gradient-to-b from-white to-gray-400 h-20"></div>
+    <div className="bg-gradient-to-b to-gray-500 from-green-800 h-20"></div>
     </>
   );
 };
