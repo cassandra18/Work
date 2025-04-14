@@ -90,15 +90,17 @@ const Facilities: React.FC = () => {
           </p>
 
           {/* Grid for medium and large screens */}
-          <div className="hidden md:grid md:grid-cols-2 gap-6">
+          <motion.div className="hidden md:grid md:grid-cols-2 gap-6"
+          >
             {facilities.map((facility, index) => {
               return (
                 <motion.div
                   key={index}
-                  className="flex gap-4 items-start p-4 border-l-4 border-[#23c87e] bg-white shadow-md rounded-md transition hover:bg-[#e8f5e9]"
-                  initial={{ opacity: 0, y: 20, scale: 0.95 }}
-                  animate={{ opacity: 1, y: 0, scale: 1 }}
-                  transition={{ duration: 0.5, ease: "easeInOut" }}
+                  className="flex gap-4 items-start p-6 border-l-4 border-[#23c87e] bg-white shadow-md rounded-xl transition-all duration-300 hover:bg-[#e8f5e9] hover:scale-105"
+                  initial={{ opacity: 0, y: 20}}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.3 }}
+                  transition={{ duration: 0.5, ease: "easeInOut", delay: index * 0.1 }}
                 >
                   <motion.div className="text-4xl text-[#0C834E]">
                     {facility.icon}
@@ -112,7 +114,7 @@ const Facilities: React.FC = () => {
                 </motion.div>
               );
             })}
-          </div>
+          </motion.div>
 
           {/* Small Device Layout */}
           <div className="flex items-center md:hidden w-full slider-facilities">
@@ -133,7 +135,6 @@ const Facilities: React.FC = () => {
         </div>
       </div>
     </div>
-    <div className="bg-gradient-to-b to-gray-500 from-green-800 h-20"></div>
     </>
   );
 };

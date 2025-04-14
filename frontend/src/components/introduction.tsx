@@ -4,58 +4,83 @@ import { GiNotebook } from "react-icons/gi";
 import { Link } from 'react-router-dom';
 
 const Introduction: React.FC = () => {
-    return (
-        <div className='mt-10 max-w-7xl mx-auto flex justify-center poppins-light'>
-            <div className='flex flex-col-reverse md:flex-row  mx-6 gap-4 md:gap-10 xl:gap-32 items-center md:items-start'>
-                {/* Motto section */} 
-                <div className='relative flex flex-col rounded-lg shadow-2xl p-1 max-w-sm mb-7  '>
-                    {/* Overlay */}
-                    <div className='absolute inset-0 bg-[#14583a88] opacity-20 rounded-lg' ></div>
-                    <div className='relative'>
-                    <img src='/images/school-image.jpeg' alt='school-image' className='mb-4'/>
-                    <h2 className='text-2xl font-bold text-[#0C834E] '>Our Motto:</h2>
-                    <h1 className='text-lg font-bold py-2'>Nurturing Bright Minds, Shaping the Future!</h1>
-                    <p className='text-md '>Our school is dedicated to fostering a love for learning in every child, helping them grow intellectually, socially, and emotionally.</p>
-                    
-                    <div className='flex justify-center'>
-                        <button className='mt-6 px-4 py-3 border border-[#0C834E] bg-blue-400 hover:bg-blue-700 text-white rounded-lg font-semibold'>Contact Us</button>
-                    </div>
-                    </div>
-                    
-                </div>
+  return (
+    <div className='md:mt-16 max-w-7xl mx-auto flex justify-between  poppins-light px-4 py-5 md:py-1 md:px-6 bg-gray-50'>
+      <div className='flex flex-col-reverse md:flex-row gap-10 xl:gap-24 items-center'>
 
-                {/* Introduction to school About */}
-                <div className='md:max-w-1/2 flex flex-col gap-4'>
-                    <p className=''>CBC Kericho Primary School is a leading institution dedicated to providing high-quality education under the Competency-Based Curriculum (CBC). Located in a serene environment that fosters both academic and personal growth, the school is committed to nurturing young minds and shaping a brighter future for every learner. With a strong foundation in academic excellence, moral integrity, and holistic development, CBC Kericho Primary School ensures that students receive a well-rounded education that prepares them for future success.
+        {/* Motto card */}
+        <motion.div
+          className='relative bg-white shadow-2xl rounded-2xl overflow-hidden max-w-sm w-full'
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <div className='absolute inset-0 bg-gradient-to-b from-[#0c834e1e] to-[#14583b20]'></div>
 
-                    At CBC Kericho Primary School, education goes beyond textbooks. The school embraces a learner-centered approach where students are encouraged to think critically, solve problems, and apply knowledge to real-life situations. This hands-on method of teaching ensures that learners do not merely memorize facts but develop practical skills that will benefit them throughout their lives. Teachers play a crucial role in this process by guiding and mentoring students, ensuring they understand and apply what they learn in meaningful ways.
-                    </p>
-                    
-                   <Link 
-                    to='/about' 
-                    className='relative text-[#0C834E]  hover:text-blue-700'>
-                    READ MORE...
-                    </Link>
-                    {/* Application Section */}
-                    <div className='relative flex justify-center items-center  rounded-lg mx-auto w-fit p-1  md:p-8 bg-cover bg-center'
-                    style={{backgroundImage: `url('/images/students.jpeg')`}}>
-
-                        {/* Overlay */}
-                        <div className='absolute inset-0 bg-[#0C834E] opacity-50 rounded-lg'></div>
-
-                        {/* Content */}
-                        <motion.h2 className='mr-5 md:text-2xl pl-2 md:pl-1 text-white font-bold whitespace-nowrap min-w-[max-content] '
-                            animate={{ scale: [1, 1.2, 1.2, 1, 1] }}
-                            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-                        >Ready to join us?
-                        </motion.h2>
-                        <Link to='/application' className='flex flex-row gap-2 justify-center gap-x-2 whitespace-nowrap min-w-[max-content] items-center border z-1 border-white hover:border-green-500 text-white md:text-lg font-bold p-1 rounded-sm ml-4'><GiNotebook className='font-semibold' /> How to Apply</Link>
-                    </div>
-                </div>
-
+          <div className='relative z-10 '>
+            <img
+              src='/images/school-image.jpeg'
+              alt='school'
+              className='rounded-md shadow-md mb-4'
+            />
+            <h2 className='text-2xl font-bold text-[#0C834E] mb-1 p-2'>Our Motto:</h2>
+            <h3 className='text-lg font-semibold mb-2 p-2'>
+              Nurturing Bright Minds, Shaping the Future!
+            </h3>
+            <p className='text-gray-700 mb-4 p-2'>
+              We foster a love for learning in every child, supporting their growth intellectually, socially, and emotionally.
+            </p>
+            <div className='flex justify-center mb-2'>
+              <Link to="/contact">
+                <button className='mt-2 px-5 py-3 bg-[#0C834E] hover:bg-[#09633c] text-white font-semibold rounded-lg shadow-md transition'>
+                  Contact Us
+                </button>
+              </Link>
             </div>
-        </div>
-    );
-}
+          </div>
+        </motion.div>
+
+        {/* Introduction content */}
+        <motion.div
+          className='flex flex-col gap-6 md:max-w-xl'
+          initial={{ opacity: 0, x: 40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <h2 className="text-3xl font-extrabold text-[#0C834E]">Welcome to CBC Kericho Primary School</h2>
+          <p className='text-gray-700 leading-relaxed text-[17px]'>
+            CBC Kericho Primary School is a leading institution providing high-quality education under the Competency-Based Curriculum (CBC). Located in a serene environment, we are dedicated to nurturing young minds for a brighter tomorrow.
+            <br /><br />
+            Education here goes beyond textbooks — we focus on hands-on learning, critical thinking, and real-life application. Learners are empowered to thrive, with supportive teachers guiding them every step of the way.
+          </p>
+
+          <Link to='/about' className='text-[#0C834E] hover:text-blue-600 font-semibold'>
+            READ MORE...
+          </Link>
+
+          {/* Application CTA */}
+          <motion.div
+            className='relative flex justify-between items-center rounded-xl overflow-hidden p-4 md:p-6 bg-cover bg-center shadow-lg'
+            style={{ backgroundImage: `url('/images/students.jpeg')` }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8 }}
+          >
+            <div className='absolute inset-0 bg-black opacity-40'></div>
+            <h2 className='relative z-10 text-white text-xl md:text-2xl font-bold animate-pulse'>
+              Ready to join us?
+            </h2>
+            <Link
+              to='/application'
+              className='relative z-10 flex items-center gap-2 bg-white text-[#0C834E] hover:bg-[#0C834E] hover:text-white font-semibold py-2 px-4 rounded-md transition'
+            >
+              <GiNotebook className='text-xl' /> How to Apply
+            </Link>
+          </motion.div>
+        </motion.div>
+      </div>
+    </div>
+  );
+};
 
 export default Introduction;
