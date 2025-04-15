@@ -78,13 +78,13 @@ const OurHistory: React.FC = () => {
   const [selectedImage, setSelectedImage] = React.useState<string | null>(null);
 
   return (
-    <div className="bg-gradient-to-br from-white to-green-50  poppins-regular">
+    <div className="  poppins-regular">
       <h2 className="text-2xl md:text-4xl font-bold text-center my-7 md:my-12 text-green-800 ">
         🧭 Our School Journey
       </h2>
 
       {/*Animated timeline  */}
-      <div className="max-w-7xl mx-auto relative border-l-4 border-green-500 pl-6 bg-gradient-to-b from-white to-green-50 rounded-lg shadow-lg p-6">
+      <div className="max-w-7xl mx-auto relative border-l-4 border-green-500 pl-6 rounded-lg shadow-lg p-6">
         {milestones.map((milestone, index) => (
           <motion.div
             key={index}
@@ -139,7 +139,7 @@ const OurHistory: React.FC = () => {
       </div>
 
       {/* Fun facts section */}
-      <div className="bg-gradient-to-br from-green-100 to-white mt-20 py-8 md:py-16 px-4 md:px-6 poppins-regular">
+      <div className="bg-gradient-to-b from-green-100 to-white-50 mt-20 py-8 md:py-16 px-4 md:px-6 poppins-regular">
         <h3 className="text-2xl md:text-4xl font-bold text-center text-green-900 mb-12 drop-shadow-md">
           🌟 Fun Facts About Our School
         </h3>
@@ -177,7 +177,8 @@ const OurHistory: React.FC = () => {
       </div>
 
       {/* Testimonials / Quote Carousel */}
-      <div className="bg-white py-8 md:py-16 px-4 md:px-6 poppins-regular">
+      <div className=" py-8 md:py-16 px-4 md:px-6 poppins-regular bg-gradient-to-b to-[#9dffd37b] from-white"
+      >
         <h3 className="text-2xl md:text-4xl font-bold text-center text-green-800 mb-12 drop-shadow-sm">
           🎤 Voices of Our School
         </h3>
@@ -213,27 +214,6 @@ const OurHistory: React.FC = () => {
         </Swiper>
       </div>
 
-      {/* School tuor video */}
-      <div className="p-7 md:py-16 poppins-regular"
-      style={{
-        background: "linear-gradient(to bottom, white 0%, #9dffd3 40%, #016624 100%)",
-      }}>
-        <h3 className="text-2xl md:text-4xl font-bold text-center text-green-900 mb-8 drop-shadow-md">
-          🎥 Tour Our School
-        </h3>
-
-        <div className="mx-auto max-w-[600px] rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
-          <video
-            className="w-full h-auto rounded-lg"
-            controls
-            autoPlay={false}
-            poster="/images/video-thumbnail.png"
-          >
-            <source src="/videos/cbc-kericho.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      </div>
     </div>
   );
 };

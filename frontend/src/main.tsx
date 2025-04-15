@@ -7,6 +7,8 @@ import HomePage from './pages/homePage.tsx';
 import About from './pages/about.tsx';
 import OurProfile from './components/ourProfile';
 import OurHistory from './components/ourHistory';
+import OurVision from './components/ourVision.tsx';
+
 
 const router = createBrowserRouter([
   {
@@ -28,6 +30,10 @@ const router = createBrowserRouter([
           {
             path: '/about/history',
             element: <OurHistory/>,
+          },
+          {
+            path: '/about/vision',
+            element: <OurVision/>
           }
         ]
       }

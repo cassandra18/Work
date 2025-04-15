@@ -6,12 +6,12 @@ import { Outlet } from 'react-router-dom'
 function App() {
 
   return (
-    <>
+    <div className="bg-gradient-to-br from-green-50 to-white min-h-screen">
       <Navbar />
       <Outlet />
       <Footer />
       <BackToTop/>
-    </>
+    </div>
   )
 }
 

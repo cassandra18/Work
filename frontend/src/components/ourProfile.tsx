@@ -83,10 +83,11 @@ const OurProfile: React.FC = () => {
             <span className="font-semibold text-[#0C834E]">
               Competency-Based Learning:
             </span>
-            Our CBC system emphasizes practical application over rote memorization.
-            Students learn through hands-on activities, projects, and critical
-            thinking. We prepare them to not only excel academically but also
-            solve real-world problems, encouraging creativity and innovation.
+            Our CBC system emphasizes practical application over rote
+            memorization. Students learn through hands-on activities, projects,
+            and critical thinking. We prepare them to not only excel
+            academically but also solve real-world problems, encouraging
+            creativity and innovation.
           </motion.p>
 
           <motion.p
@@ -100,9 +101,9 @@ const OurProfile: React.FC = () => {
               A Vibrant Community:
             </span>
             We believe in the power of community. Our students, teachers, and
-            parents are all part of a larger family that works together to foster
-            a culture of collaboration, support, and mutual respect. We celebrate
-            individual strengths and ensure everyone’s voice is heard.
+            parents are all part of a larger family that works together to
+            foster a culture of collaboration, support, and mutual respect. We
+            celebrate individual strengths and ensure everyone’s voice is heard.
           </motion.p>
 
           <motion.p
@@ -117,9 +118,9 @@ const OurProfile: React.FC = () => {
             </span>
             Creativity is at the heart of education at CBC Kericho. Students are
             encouraged to explore their artistic talents through music, drama,
-            arts, and sports. These experiences help nurture their self-expression
-            and foster emotional intelligence, which is as important as academic
-            learning.
+            arts, and sports. These experiences help nurture their
+            self-expression and foster emotional intelligence, which is as
+            important as academic learning.
           </motion.p>
         </div>
       </section>
@@ -144,16 +145,17 @@ const OurProfile: React.FC = () => {
             <br />
             <br />
             Our mission is to empower learners with the knowledge, skills, and
-            values they need to thrive in the 21st century. We foster creativity,
-            critical thinking, collaboration, and strong moral values in a
-            supportive and inclusive environment.
+            values they need to thrive in the 21st century. We foster
+            creativity, critical thinking, collaboration, and strong moral
+            values in a supportive and inclusive environment.
             <br />
             <br />
-            With a team of dedicated, professionally trained teachers and a focus
-            on individualized attention, we ensure that no child is left behind.
-            Our modern facilities, digital learning tools, and active co-curricular
-            programs help develop well-rounded learners who are not only academically
-            strong but also socially and emotionally intelligent.
+            With a team of dedicated, professionally trained teachers and a
+            focus on individualized attention, we ensure that no child is left
+            behind. Our modern facilities, digital learning tools, and active
+            co-curricular programs help develop well-rounded learners who are
+            not only academically strong but also socially and emotionally
+            intelligent.
             <br />
             <br />
             I warmly invite parents and guardians to become part of this amazing
@@ -168,12 +170,8 @@ const OurProfile: React.FC = () => {
       </div>
 
       <section
-  className="mt-20 py-20 px-4"
-  style={{
-    background: "linear-gradient(to bottom, white 0%, #9dffd3 40%, #016624 100%)",
-  }}
->
-
+        className="mt-10 py-20 px-4"
+      >
         <div className="max-w-5xl mx-auto">
           {/* Inspirational Quote */}
           <motion.blockquote
@@ -187,6 +185,25 @@ const OurProfile: React.FC = () => {
           </motion.blockquote>
         </div>
       </section>
+
+      {/* School tuor video */}
+      <div className="p-7 md:py-16 poppins-regular bg-gradient-to-b to-[#9dffd37b] from-white">
+        <h3 className="text-2xl md:text-4xl font-bold text-center text-green-900 mb-8 drop-shadow-md">
+          🎥 Tour Our School
+        </h3>
+
+        <div className="mx-auto max-w-[600px] rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
+          <video
+            className="w-full h-auto rounded-lg"
+            controls
+            autoPlay={false}
+            poster="/images/video-thumbnail.png"
+          >
+            <source src="/videos/cbc-kericho.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
     </div>
   );
 };

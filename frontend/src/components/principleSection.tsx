@@ -3,11 +3,11 @@ import React from 'react';
 
 const PricipleSection: React.FC = () => {
     return (
-        <div className='poppins-regular'>
-            <div className='bg-cover bg-center relative p-4 md:p-10' style={{ backgroundImage: 'url(/images/school-image.jpeg)' }}>
+        <div className='poppins-regular '>
+            <div className='max-w-7xl mx-auto my-20 bg-cover bg-center relative p-4 md:p-10 ' style={{ backgroundImage: 'url(/images/school-image.jpeg)' }}>
 
             {/* overlay */}
-                <div className='bg-[#1f2925] opacity-70 inset-0 absolute'></div>
+                <div className='bg-[#1f2925]  opacity-70 inset-0 absolute'></div>
 
             {/* Content area */}
                 <div className='border border-green-800 mx-2 md:mx-10 mt-10 rounded-md relative z-10 flex flex-col lg:flex-row items-center gap-4'>
@@ -33,7 +33,9 @@ const PricipleSection: React.FC = () => {
                     
                 </div>
             </div>
-            <div className="hidden md:block bg-gradient-to-b from-gray-500 to-green-800 h-20"></div>
+            <div className="hidden md:blockh-20" 
+            style={{background: "linear-gradient(to bottom, white 0%, #9dffd3 40%, #016624 100%)",
+      }}></div>
         </div>
     )
 }
