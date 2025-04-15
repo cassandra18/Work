@@ -5,6 +5,8 @@ import './index.css';
 import App from './App.tsx';
 import HomePage from './pages/homePage.tsx';
 import About from './pages/about.tsx';
+import OurProfile from './components/ourProfile';
+import OurHistory from './components/ourHistory';
 
 const router = createBrowserRouter([
   {
@@ -21,7 +23,12 @@ const router = createBrowserRouter([
         children: [
           {
             path: '/about/profile',
+            element: <OurProfile/>,
           },
+          {
+            path: '/about/history',
+            element: <OurHistory/>,
+          }
         ]
       }
     ],

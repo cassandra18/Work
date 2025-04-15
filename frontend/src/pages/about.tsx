@@ -1,10 +1,10 @@
 import React from 'react';
-import AboutContainer from '../components/aboutContainer';
+import { Outlet } from 'react-router-dom';
 
 
 const About: React.FC = () => {
     return (
-        <AboutContainer/>
+        <Outlet />
     )
 }
 

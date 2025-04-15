@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const AboutContainer: React.FC = () => {
+const OurProfile: React.FC = () => {
   return (
     <div className="poppins-regular">
       <div
@@ -191,4 +191,4 @@ const AboutContainer: React.FC = () => {
   );
 };
 
-export default AboutContainer;
+export default OurProfile;
