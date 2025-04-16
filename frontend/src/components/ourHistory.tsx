@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import CTA from "./cta";
 
 const milestones = [
   {
@@ -177,8 +178,9 @@ const OurHistory: React.FC = () => {
       </div>
 
       {/* Testimonials / Quote Carousel */}
-      <div className=" py-8 md:py-16 px-4 md:px-6 poppins-regular bg-gradient-to-b to-[#9dffd37b] from-white"
+      <div className=" flex flex-col md:flex-row items-center justify-evenly gap-6 py-8 md:py-16 px-4 md:px-6 poppins-regular bg-gradient-to-b to-[#9dffd37b] from-white"
       >
+        <div>
         <h3 className="text-2xl md:text-4xl font-bold text-center text-green-800 mb-12 drop-shadow-sm">
           🎤 Voices of Our School
         </h3>
@@ -190,7 +192,7 @@ const OurHistory: React.FC = () => {
           loop={true}
           autoplay={{ delay: 5000, disableOnInteraction: false }}
           pagination={{ clickable: true }}
-          className="max-w-2xl mx-auto"
+          className="max-w-2xl mx-auto mb-10"
         >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index}>
@@ -202,7 +204,7 @@ const OurHistory: React.FC = () => {
                 className="bg-green-50 border-l-4 border-green-400 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
               >
                 <div className="text-3xl mb-4">{testimonial.emoji}</div>
-                <p className="italic text-gray-700 mb-4">
+                <p className="kanit-regular-italic text-gray-700 mb-4">
                   "{testimonial.quote}"
                 </p>
                 <p className="text-green-800 font-semibold text-right">
@@ -212,6 +214,9 @@ const OurHistory: React.FC = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+        </div>
+      {/* Call to Action */}
+      <CTA/>
       </div>
 
     </div>

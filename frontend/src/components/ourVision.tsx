@@ -165,7 +165,7 @@ const OurVision: React.FC = () => {
             </motion.div>
             {/* Closing Quote */}
             <motion.blockquote
-                className="italic text-center md:text-xl text-green-700 mt-14 border-t pt-6 border-green-200"
+                className="kanit-regular-italic text-center md:text-xl text-gray-500 mt-14 border-t pt-6 border-green-200"
                 {...fadeIn(0.7)}
             >
                 “At CBC Kericho, we don’t just teach for exams – we prepare young minds for life.”

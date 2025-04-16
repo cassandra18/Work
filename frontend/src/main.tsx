@@ -8,6 +8,7 @@ import About from './pages/about.tsx';
 import OurProfile from './components/ourProfile';
 import OurHistory from './components/ourHistory';
 import OurVision from './components/ourVision.tsx';
+import Administration from './components/adminComponents/administartion.tsx';
 
 
 const router = createBrowserRouter([
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
           {
             path: '/about/vision',
             element: <OurVision/>
+          },
+          {
+            path: '/about/administration',
+            element: <Administration/>
           }
         ]
       }

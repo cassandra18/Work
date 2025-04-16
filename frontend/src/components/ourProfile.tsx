@@ -1,11 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
+import CTA from "./cta";
+
 
 const OurProfile: React.FC = () => {
   return (
     <div className="poppins-regular">
       <div
-        className=" relative  bg-black text-white h-96"
+        className=" relative  text-white h-96"
         style={{
           backgroundImage: `url('/images/students2.jpeg')`,
           backgroundRepeat: "repeat",
@@ -170,12 +172,12 @@ const OurProfile: React.FC = () => {
       </div>
 
       <section
-        className="mt-10 py-20 px-4"
+        className="mt-10 p-10 md:py-20 px-4"
       >
         <div className="max-w-5xl mx-auto">
           {/* Inspirational Quote */}
           <motion.blockquote
-            className="md:mt-16 md:text-xl italic text-center text-gray-700 border-l-4 border-[#0C834E] pl-4 max-w-3xl mx-auto"
+            className="md:mt-16 md:text-xl kanit-regular-italic text-center text-gray-700 border-l-4 border-[#0C834E] pl-4 max-w-3xl mx-auto"
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
@@ -186,12 +188,10 @@ const OurProfile: React.FC = () => {
         </div>
       </section>
 
+<div className="flex flex-col md:flex-row items-center justify-evenly bg-gradient-to-br from-white to-[#9dffd379] md:pb-6 pb-10">
       {/* School tuor video */}
-      <div className="p-7 md:py-16 poppins-regular bg-gradient-to-b to-[#9dffd37b] from-white">
-        <h3 className="text-2xl md:text-4xl font-bold text-center text-green-900 mb-8 drop-shadow-md">
-          🎥 Tour Our School
-        </h3>
-
+      <div className="w-full md:w-1/2 p-4 md:p-6 md:py-16 poppins-regular">
+        <h2 className="text-3xl font-bold mb-4 text-[#0C834E] text-center">🎥 School Tour Video</h2>
         <div className="mx-auto max-w-[600px] rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
           <video
             className="w-full h-auto rounded-lg"
@@ -204,6 +204,12 @@ const OurProfile: React.FC = () => {
           </video>
         </div>
       </div>
+
+      <div>
+        <CTA/>
+      </div>
+</div>
+
     </div>
   );
 };

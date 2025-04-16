@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   FaFacebookF,
   FaInstagram,
@@ -87,11 +88,14 @@ const Navbar: React.FC = () => {
       {/* Lower navbar */}
       <div className="border-b-6 border-b-[rgba(19,63,19,0.5)] flex items-center justify-between md:justify-evenly">
        {/* Logo */}
+       <Link to='/'>
         <div className="flex items-center">
+           
             <img src="/images/school-logo.png" alt='school-logo' className="w-24 md:w-28 h-auto"/>
             <h1 className="text-xl md:text-2xl font-bold text-[#0C834E]">C.B.C KERICHO</h1>
+        
         </div>
-
+        </Link>
         {/* Navlinks*/}
         <nav>
             {/* Desktop menu */}
