@@ -6,7 +6,7 @@ import React from "react";
 const CTA: React.FC = () => {
   return (
     <motion.div
-      className="relative flex justify-between items-center rounded-xl overflow-hidden p-4 md:p-6 bg-cover bg-center shadow-lg h-24 md:h-32 poppins-regular"
+      className="relative flex justify-between items-center rounded-xl overflow-hidden p-4 md:p-6 bg-cover bg-center shadow-lg h-24 md:h-32 poppins-regular max-w-xl mx-5 md:mx-auto "
       style={{ backgroundImage: `url('/images/students.jpeg')` }}
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}

@@ -1,3 +1,5 @@
+import 'slick-carousel/slick/slick.css?raw';
+import 'slick-carousel/slick/slick-theme.css?raw';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -9,7 +11,7 @@ import OurProfile from './components/ourProfile';
 import OurHistory from './components/ourHistory';
 import OurVision from './components/ourVision.tsx';
 import Administration from './components/adminComponents/administartion.tsx';
-
+import AboutPolicies from './pages/aboutPolicies.tsx';
 
 const router = createBrowserRouter([
   {
@@ -39,6 +41,10 @@ const router = createBrowserRouter([
           {
             path: '/about/administration',
             element: <Administration/>
+          },
+          {
+            path: '/about/policies',
+            element: <AboutPolicies/>
           }
         ]
       }
