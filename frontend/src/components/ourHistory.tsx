@@ -178,7 +178,7 @@ const OurHistory: React.FC = () => {
       </div>
 
       {/* Testimonials / Quote Carousel */}
-      <div className=" flex flex-col md:flex-row items-center justify-evenly gap-6 py-8 md:py-16 px-4 md:px-6 poppins-regular bg-gradient-to-b to-[#9dffd37b] from-white"
+      <div className=" flex flex-col lg:flex-row items-center justify-evenly gap-6 py-8 md:py-16 px-4 md:px-6 poppins-regular bg-gradient-to-b to-[#9dffd37b] from-white"
       >
         <div>
         <h3 className="text-2xl md:text-4xl font-bold text-center text-green-800 mb-12 drop-shadow-sm">
@@ -192,7 +192,7 @@ const OurHistory: React.FC = () => {
           loop={true}
           autoplay={{ delay: 5000, disableOnInteraction: false }}
           pagination={{ clickable: true }}
-          className="max-w-2xl mx-auto mb-10"
+          className="md:max-w-2xl max-w-sm mx-auto mb-10"
         >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index}>
