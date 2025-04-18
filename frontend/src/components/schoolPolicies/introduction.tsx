@@ -16,7 +16,7 @@ const Introduction: React.FC = () => {
                 initial={{ opacity: 0, x: -40 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, amount: 0.3 }}
-                transition={{ delay: 0.2, duration: 0.6, ease: 'easeOut' }}
+                transition={{ delay: 0.1, duration: 0.6, ease: 'easeOut' }}
                 >📘 Our School Policies
             </motion.h1>
             <motion.p {...fadeIn(0.1)} className='md:text-lg mb-6 text-gray-700 leading-relaxed'>At CBC Kericho Primary and Junior Secondary, our school policies are designed to foster a <strong>safe, respectful, and engaging </strong> learning environment for all learners, teachers, and parents.</motion.p>

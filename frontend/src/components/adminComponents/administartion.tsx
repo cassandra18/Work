@@ -398,7 +398,7 @@ const Administration: React.FC = () => {
       </div>
 
       {/* Support and wellness leaders */}
-      <h2 id='support' className="text-xl md:text-4xl font-bold text-center text-green-800 my-10 md:my-20 border-y-2 py-2">🏥 Our Suppor and Wellness Team</h2>
+      <h2 id='support' className="text-xl md:text-4xl font-bold text-center text-green-800 my-10 md:my-20 border-y-2 py-2">🏥 Our Support and Wellness Team</h2>
 
       <div className="block md:hidden">
         <Slider {...sliderSettings}>
