@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 const PricipleSection: React.FC = () => {
     return (
         <div className='poppins-regular '>
-            <div className='my-20 bg-cover bg-center relative p-4 md:p-10 ' style={{ backgroundImage: 'url(/images/school-image.jpeg)'}}>
+            <div className=' bg-cover bg-center relative p-4 md:p-10 ' style={{ backgroundImage: 'url(/images/school-image.jpeg)'}}>
 
             {/* overlay */}
                 <div className='bg-[#1f2925]  opacity-70 inset-0 absolute'></div>
