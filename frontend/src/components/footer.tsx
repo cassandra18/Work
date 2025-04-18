@@ -43,7 +43,7 @@ const Footer: React.FC = () => {
             <div className="flex items-start flex-col ml-2 md:mx-0 text-sm md:text-base">
             <h3 className="text-[#9dffd3] font-bold text-lg mb-3 underline underline-offset-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><Link to='/about/news' className="flex items-center hover:text-[#9dffd3]"> <FaNewspaper className="mr-3"/>News and Events</Link></li>
+              <li><Link to='/about/newsandevents' className="flex items-center hover:text-[#9dffd3]"> <FaNewspaper className="mr-3"/>News and Events</Link></li>
               <li><Link to='/about/faq' className="flex items-center hover:text-[#9dffd3]"><FaQuestion className="mr-3"/>FAQs</Link></li>
               <li><Link to="/about/games" className=" flex items-center hover:text-[#9dffd3]"><IoMdFootball className="mr-3"/>Games and Sports</Link></li>
               <li><Link to="/about/clubs" className="flex items-center hover:text-[#9dffd3]"><HiUserGroup className="mr-3"/>Clubs and Societies</Link></li>

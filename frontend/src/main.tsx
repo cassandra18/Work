@@ -12,6 +12,7 @@ import OurHistory from './components/ourHistory';
 import OurVision from './components/ourVision.tsx';
 import Administration from './components/adminComponents/administartion.tsx';
 import AboutPolicies from './pages/aboutPolicies.tsx';
+import AboutNewsandEvents from './pages/aboutNewsandEvents.tsx';
 
 const router = createBrowserRouter([
   {
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
           {
             path: '/about/policies',
             element: <AboutPolicies/>
+          },
+          {
+            path: '/about/newsandevents',
+            element: <AboutNewsandEvents/>
           }
         ]
       }

@@ -33,7 +33,7 @@ const Introduction: React.FC = () => {
             </p>
             <div className='flex justify-center mb-2'>
               <Link to="/contact">
-                <button className='mt-2 px-5 py-3 bg-[#0C834E] hover:bg-[#09633c] text-white font-semibold rounded-lg shadow-md transition'>
+                <button className='mt-2 px-5 py-3 bg-[#0C834E] hover:bg-[#09633c] text-white font-semibold rounded-full shadow-md transition'>
                   Contact Us
                 </button>
               </Link>
