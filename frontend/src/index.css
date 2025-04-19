@@ -37,6 +37,7 @@ body::-webkit-scrollbar {
 /* Style the Swiper navigation buttons */
 .swiper-button-prev,
 .swiper-button-next {
+  font-size: 48px !important; /* Increase arrow size */
   width: 40px !important;
   height: 40px !important;
   background-color: transparent; /* Default: No background */
@@ -45,6 +46,7 @@ body::-webkit-scrollbar {
   align-items: center;
   justify-content: center;
   transition: background-color 0.3s ease-in-out;
+  color: #4bf7af  !important; 
 }
 
 /* Add a background on hover */
@@ -57,6 +59,15 @@ body::-webkit-scrollbar {
 .swiper-button-prev::after,
 .swiper-button-next::after {
   font-size: 20px !important; /* Decrease arrow size */
+}
+
+.swiper-pagination-bullet {
+  background-color: #c7fce6 !important; 
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #4bf7af!important;
 }
 
 .poppins-light {
