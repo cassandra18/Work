@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Introduction: React.FC = () => {
   return (
-    <div className='bg-gradient-to-br from-green-50 to-white '>
+    <div className='bg-gradient-to-br from-green-50 to-white pb-20'>
     <div className='md:pt-10 max-w-7xl mx-auto flex justify-between  poppins-light px-4 py-5 md:py-1 md:px-6'>
       <div className='flex flex-col-reverse md:flex-row gap-10 xl:gap-24 items-center'>
 

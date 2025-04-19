@@ -1,47 +1,50 @@
 import React from "react";
-import {
-  FaBook,
-  FaUserGraduate,
-  FaFutbol,
-  FaChalkboardTeacher,
-  FaSchool,
-  FaTrophy,
-} from "react-icons/fa";
 import { motion } from "framer-motion";
+import { Building2 } from 'lucide-react';
+
+const fadeIn = (delay = 0, direction: 'left' | 'right' = 'left') => {
+  const xValue = direction === 'left' ? -50 : 50;
+  return {
+      initial: { opacity: 0, x: xValue },
+      whileInView: { opacity: 1, x: 0 },
+      transition: { delay, duration: 0.6, ease: 'easeOut' },
+      viewport: { once: true, amount: 0.3 }
+  };
+};
 
 const facilities = [
   {
-    icon: <FaFutbol />,
+    icon: '⚽',
     title: "Extracurricular Activities",
     description:
       "We offer a variety of clubs and sports to enhance student learning beyond the classroom.",
   },
   {
-    icon: <FaTrophy />,
+    icon: '📈',
     title: "KCPE Results",
     description:
       "Our students consistently perform excellently in national examinations, setting high academic standards.",
   },
   {
-    icon: <FaUserGraduate />,
+    icon: '🤝',
     title: "Student Support System",
     description:
       "We provide mentorship, counseling, and career guidance to ensure student success.",
   },
   {
-    icon: <FaBook />,
+    icon: '📚',
     title: "Library",
     description:
       "Our well-equipped library offers a vast collection of books, digital resources, and study spaces.",
   },
   {
-    icon: <FaSchool />,
+    icon: '🏫',
     title: "School Facilities",
     description:
       "State-of-the-art classrooms, science labs, and computer labs to enhance learning experiences.",
   },
   {
-    icon: <FaChalkboardTeacher />,
+    icon: '🖥️',
     title: "Smart Learning",
     description:
       "Interactive digital learning platforms and technology-enhanced classrooms.",
@@ -62,28 +65,22 @@ const Facilities: React.FC = () => {
   return (
     <>
     <div
-      style={{ backgroundImage: `url('/images/facilities2.jpeg')` }}
-      className="poppins-regular relative bg-cover bg-center flex flex-col justify-center items-center text-white mt-10 "
+      className="poppins-regular relative bg-cover bg-center flex flex-col justify-center items-center text-white my-10 pb-10 bg-green-50 "
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-[#0C834E] opacity-50 backdrop-blur-md"></div>
+      <div className="absolute inset-0 opacity-50 backdrop-blur-md"></div>
       {/* Facilities Section - Bulletin Board Style */}
       <div className="container mx-auto mt-10 z-10">
-        <div className="rounded-lg p-6 shadow-xl">
-          <h2 className=" text-3xl md:text-4xl lg:text-5xl font-bold text-center text-[#9dffd3] mb-6 relative">
-            <span className="poppins-bold relative z-10 drop-shadow-md">
-              FACILITIES WE OFFER
-            </span>
-
-            {/* Animated underline */}
-            <motion.div
-              className="absolute left-1/2 bottom-[-10px] h-1 bg-[#9dffd3] rounded-md"
-              initial={{ width: 0 }}
-              animate={{ width: "100%" }}
-              transition={{ duration: 1, ease: "easeInOut" }}
-            ></motion.div>
-          </h2>
-          <p className="text-center text-md md:text-lg  text-[#fff6f6]  my-4 mx-auto max-w-lg">
+        <div className="rounded-lg p-6 ">
+        <motion.h2
+                className="text-3xl md:text-5xl font-bold text-green-800 mb-10 flex justify-center items-center gap-2"
+                {...fadeIn(0.1)}
+            >
+                <Building2 className="text-yellow-500" size={32} />
+                Student Spotlight
+            </motion.h2>
+          
+          <p className="text-center text-md md:text-lg  text-gray-700  my-4 mx-auto max-w-lg">
             Our school provides a well-rounded learning environment with modern
             facilities, ensuring students excel academically and grow
             holistically through sports, mentorship, and digital learning.
@@ -106,7 +103,7 @@ const Facilities: React.FC = () => {
                     {facility.icon}
                   </motion.div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-800">
+                    <h3 className="text-xl font-bold text-green-700">
                       {facility.title}
                     </h3>
                     <p className="text-gray-600 mt-1">{facility.description}</p>

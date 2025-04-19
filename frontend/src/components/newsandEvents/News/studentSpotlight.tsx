@@ -38,7 +38,7 @@ const StudentSpotlight: React.FC = () => {
     return (
         <section id='spotlight' className="py-12 bg-green-50 text-center">
             <motion.h2
-                className="text-3xl md:text-4xl font-bold text-green-800 mb-10 flex justify-center items-center gap-2"
+                className="text-3xl md:text-5xl font-bold text-green-800 mb-10 flex justify-center items-center gap-2"
                 {...fadeIn(0.1)}
             >
                 <Star className="text-yellow-500" size={32} />
