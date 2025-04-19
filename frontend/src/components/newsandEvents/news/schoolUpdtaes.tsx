@@ -73,7 +73,7 @@ const SchoolUpdates: React.FC = () => {
                     <Building2 className="text-yellow-400" /> Infrastructure Updates
                 </h3>
 
-                <div className="overflow-x-auto flex gap-6 pb-4">
+                <div className="overflow-x-auto scrollbar-thin overflow-y-hidden snap-x snap-mandatory flex gap-6 pb-4">
                     {[
                         {
                             title: 'New Science Lab',
