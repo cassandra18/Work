@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Megaphone, CalendarDays } from 'lucide-react';
+import { CalendarDays } from 'lucide-react';
 
 const fadeIn = (delay = 0) => ({
     initial: { opacity: 0, y: 20 },
@@ -9,9 +9,9 @@ const fadeIn = (delay = 0) => ({
     viewport: { once: true, amount: 0.3 }
 });
 
-const NewsAndEventsHero: React.FC = () => {
+const EventsHero: React.FC = () => {
     return (
-        <div className="relative h-[28rem] overflow-hidden">
+        <div className="relative h-[28rem] overflow-hidden" id='UpcomingEvents'>
             {/* Background Image with gradient overlay */}
             <div
                 className="absolute inset-0 bg-cover bg-center"
@@ -27,22 +27,21 @@ const NewsAndEventsHero: React.FC = () => {
                 {...fadeIn(0.2)}
             >
                 <div className="flex items-center gap-3 mb-4">
-                    <Megaphone className="text-yellow-400 animate-bounce" size={32} />
-                    <CalendarDays className="text-white animate-pulse" size={32} />
+                    <CalendarDays className="text-yellow-400 animate-bounce" size={32} />
                 </div>
 
                 <motion.h1
                     className="text-4xl md:text-5xl font-bold drop-shadow-lg mb-2"
                     {...fadeIn(0.3)}
                 >
-                    News & Events
+                    Events & Highlights
                 </motion.h1>
 
                 <motion.p
                     className="max-w-xl text-lg md:text-xl text-white/90 drop-shadow-md"
                     {...fadeIn(0.4)}
                 >
-                    "Every Update Counts – Be Part of the CBC Kericho Story."
+                    "Growing through every moment, one event at a time"
                 </motion.p>
 
                 <motion.button
@@ -69,4 +68,4 @@ const NewsAndEventsHero: React.FC = () => {
     );
 };
 
-export default NewsAndEventsHero;
+export default EventsHero;

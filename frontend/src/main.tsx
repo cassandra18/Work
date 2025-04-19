@@ -12,7 +12,8 @@ import OurHistory from './components/ourHistory';
 import OurVision from './components/ourVision.tsx';
 import Administration from './components/adminComponents/administartion.tsx';
 import AboutPolicies from './pages/aboutPolicies.tsx';
-import AboutNewsandEvents from './pages/aboutNewsandEvents.tsx';
+import AboutNews from './pages/aboutNews.tsx';
+import AboutEvents from './pages/aboutEvents.tsx';
 
 const router = createBrowserRouter([
   {
@@ -48,8 +49,12 @@ const router = createBrowserRouter([
             element: <AboutPolicies/>
           },
           {
-            path: '/about/newsandevents',
-            element: <AboutNewsandEvents/>
+            path: '/about/news',
+            element: <AboutNews/>
+          },
+          {
+            path: '/about/events',
+            element: <AboutEvents/>
           }
         ]
       }

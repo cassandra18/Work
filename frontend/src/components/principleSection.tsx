@@ -8,7 +8,7 @@ const PricipleSection: React.FC = () => {
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className='poppins-regular mb-10 max-w-7xl mx-auto rounded-2xl shadow-2xl overflow-hidden'>
+        className='poppins-regular mb-10 max-w-7xl mx-auto rounded-md lg:rounded-xl shadow-2xl overflow-hidden'>
             <div className=' bg-cover bg-center relative p-4 md:p-10 ' style={{ backgroundImage: 'url(/images/school-image.jpeg)'}}>
 
             {/* overlay */}

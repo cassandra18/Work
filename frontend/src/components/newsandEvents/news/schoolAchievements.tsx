@@ -16,13 +16,13 @@ const fadeIn = (delay = 0, direction: 'left' | 'right' = 'left') => {
 const SchoolAchievements: React.FC = () => {
     return (
         <section id='achievements' className="py-12 text-center ">
-            <motion.h2
+            <h2
                 className="text-3xl md:text-5xl font-bold text-green-800 mb-6 border-b-2 border-green-800 pb-2"
                 {...fadeIn(0.1)}
             >
                 <Trophy className="inline-block mr-2 text-yellow-500" size={32} />
                 School Achievements
-            </motion.h2>
+            </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
                 {/* Card 1 */}

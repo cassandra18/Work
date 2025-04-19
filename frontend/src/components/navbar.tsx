@@ -132,7 +132,8 @@ const Navbar: React.FC = () => {
 
                             <div>
                             <p className="text-black border-b border-[rgba(0,0,0,0.3)] mb-2">Information Desk</p>
-                            <NavLink to="/about/newsandevents" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-base poppins-regular">News and Events</NavLink>
+                            <NavLink to="/about/news" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-base poppins-regular">News</NavLink>
+                            <NavLink to="/about/events" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-base poppins-regular">Events</NavLink>
                             <NavLink to="/about/games" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-base poppins-regular">Games and Sports</NavLink>
                             <NavLink to="/about/clubs" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-base poppins-regular">Clubs and Societies</NavLink>
                             <NavLink to="/about/leadership" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-base poppins-regular">Student Leadership</NavLink>
@@ -221,7 +222,8 @@ const Navbar: React.FC = () => {
 
                             <div>
                             <p className="text-black border-b border-[rgba(0,0,0,0.3)] mb-2">Information Desk</p>
-                            <NavLink to="/about/newsandevents" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">News and Events</NavLink>
+                            <NavLink to="/about/news" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">News</NavLink>
+                            <NavLink to="/about/events" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">Events</NavLink>
                             <NavLink to="/about/games" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">Games and Sports</NavLink>
                             <NavLink to="/about/clubs" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">Clubs and Societies</NavLink>
                             <NavLink to="/about/leadership" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">Student Leadership</NavLink>
