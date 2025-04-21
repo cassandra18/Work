@@ -16,7 +16,7 @@ import AboutNews from './pages/aboutNews.tsx';
 import AboutEvents from './pages/aboutEvents.tsx';
 import AboutGames from './pages/aboutGames.tsx';
 import AboutClubsAndSocieties from './pages/aboutClubsandSocieties.tsx';
-
+import AboutFacilities from './pages/aboutFacilities.tsx';
 
 
 const router = createBrowserRouter([
@@ -67,6 +67,10 @@ const router = createBrowserRouter([
           {
             path: '/about/clubs',
             element: <AboutClubsAndSocieties/>
+          },
+          {
+            path: '/about/facilities',
+            element: <AboutFacilities/>
           }
         ]
       }
