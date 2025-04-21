@@ -55,7 +55,7 @@ const Highlights: React.FC = () => {
   <section id="highlights" className="py-16 bg-gradient-to-br from-green-100 to-white scroll-mt-24">
     
   <motion.h2
-      className="text-3xl md:text-4xl font-bold text-green-700 mb-12 text-center"
+      className="text-3xl md:text-4xl font-bold text-green-800 mb-12 text-center"
       {...fadeIn(0.1)}
   >
       🌟 Latest Highlights

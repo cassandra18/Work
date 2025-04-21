@@ -14,7 +14,7 @@ const heroImages = [
 
 export default function GamesPageHeader() {
     return (
-        <div className="relative w-full h-auto md:h-[50vh] overflow-hidden">
+        <div className="relative w-full h-auto md:h-[50vh] overflow-hidden shadow-2xl">
           {/* Background Slider */}
           <Swiper
             modules={[Autoplay]}

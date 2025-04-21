@@ -62,7 +62,7 @@ const LatestHighlights: React.FC = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: index * 0.2 }}
           className="relative">
-            <div className="absolute -left-[9px] top-1 w-9 h-9 text-center text-2xl bg-gray-400 rounded-full">{item.emoji}</div>
+            <div className="absolute -left-[9px] top-1 w-9 h-9 text-center text-2xl bg-gray-200 rounded-full">{item.emoji}</div>
 
             <p className="text-sm text-gray-500 font-medium mb-1 pl-9"> {item.date}</p>
             <h3 className="md:text-xl text-lg font-bold text-green-700 pl-9">{item.title}</h3>

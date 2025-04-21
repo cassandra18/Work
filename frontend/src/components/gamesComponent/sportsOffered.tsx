@@ -1,6 +1,7 @@
-import React from "react";
 import { motion } from "framer-motion";
-import { Dumbbell, Goal, ShieldCheck, Trophy, Users } from "lucide-react";
+
+
+
 
 const sports = [
   {
@@ -56,15 +57,15 @@ const sports = [
 
 export default function SportsWeOffer() {
   return (
-    <section className="py-16 px-3 md:px-16">
+    <section className="py-16 px-3 max-w-7xl mx-auto bg-gradient-to-br to-green-100 from-green-50 mb-20 rounded-lg shadow-lg">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         className="text-center mb-12"
       >
-        <h2 className="text-4xl font-bold mb-2">🏀 Sports We Offer</h2>
-        <p className="text-gray-600 max-w-2xl mx-auto">
+        <h2 className="text-3xl md:text-5xl font-bold mb-2 text-green-800">🏀 Sports We Offer</h2>
+        <p className="text-gray-600 max-w-2xl mx-auto md:text-lg">
           Our students have access to a variety of exciting sports to help them grow in teamwork, discipline, and fun.
         </p>
       </motion.div>
