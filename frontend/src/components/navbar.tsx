@@ -192,7 +192,7 @@ const Navbar: React.FC = () => {
             </button>
         
              {/* Mobile Menu (Slide-in Sidebar) */}
-            <div className={`fixed top-0 right-0 h-full w-3/4 bg-white/30 backdrop-blur-lg shadow-lg p-6 transform ${menuOpen ? "translate-x-0" : "translate-x-full"} transition-transform duration-300 ease-in-out z-50`}>
+            <div className={`fixed top-0 right-0 h-full w-3/4 bg-white/30 backdrop-blur-lg shadow-lg p-6 transform ${menuOpen ? "translate-x-0" : "translate-x-full"} transition-transform duration-300 ease-in-out z-50 overflow-y-scroll`}>
                 <button onClick={toggleMenu} className="absolute top-4 right-4 text-3xl text-[#0C834E]">
                 <GrFormClose />
                 </button>
@@ -212,27 +212,27 @@ const Navbar: React.FC = () => {
                           <div className="flex flex-col justify-between">
                             <div>
                               <p className="text-black border-b border-[rgba(0,0,0,0.3)] mb-2">About CBC Kericho</p>
-                            <NavLink to="/about/profile" className="block py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">Our Profile</NavLink>
-                            <NavLink to="/about/history" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">Our History</NavLink>
-                            <NavLink to="/about/vision" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">Vision, Mission & Values</NavLink>
-                            <NavLink to="/about/administration" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">School Administration</NavLink>
-                            <NavLink to="/about/policies" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular ">School Policies</NavLink>
+                            <NavLink to="/about/profile" onClick={toggleMenu} className="block py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">Our Profile</NavLink>
+                            <NavLink to="/about/history" onClick={toggleMenu} className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">Our History</NavLink>
+                            <NavLink to="/about/vision" onClick={toggleMenu} className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">Vision, Mission & Values</NavLink>
+                            <NavLink to="/about/administration" onClick={toggleMenu} className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">School Administration</NavLink>
+                            <NavLink to="/about/policies" onClick={toggleMenu} className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular ">School Policies</NavLink>
                             </div>
 
                             <div>
                             <p className="text-black border-b border-[rgba(0,0,0,0.3)] mb-2">Information Desk</p>
-                            <NavLink to="/about/news" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">News</NavLink>
-                            <NavLink to="/about/events" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">Events</NavLink>
-                            <NavLink to="/about/games" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">Games and Sports</NavLink>
-                            <NavLink to="/about/clubs" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">Clubs and Societies</NavLink>
-                            <NavLink to="/about/facilities" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">Facilities and Amenities</NavLink>
+                            <NavLink to="/about/news" onClick={toggleMenu} className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">News</NavLink>
+                            <NavLink to="/about/events" onClick={toggleMenu} className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">Events</NavLink>
+                            <NavLink to="/about/games" onClick={toggleMenu} className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">Games and Sports</NavLink>
+                            <NavLink to="/about/clubs" onClick={toggleMenu} className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">Clubs and Societies</NavLink>
+                            <NavLink to="/about/facilities" onClick={toggleMenu} className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">Facilities and Amenities</NavLink>
                             
                             </div>
 
                             <div>
                             <p className="text-black border-b border-[rgba(0,0,0,0.3)] mb-2">More</p>
-                            <NavLink to="/about/results" className="block py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">KCPE Results</NavLink>
-                            <NavLink to="/about/departments" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">Departments</NavLink>
+                            <NavLink to="/about/results" onClick={toggleMenu} className="block py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">KCPE Results</NavLink>
+                            <NavLink to="/about/departments" onClick={toggleMenu} className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">Departments</NavLink>
                             
                             </div>
                             </div>
@@ -252,11 +252,11 @@ const Navbar: React.FC = () => {
                         >
                           <div className="flex flex-col justify-between">
                             <div>
-                            <NavLink to="/admission/overview" className="block py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">Overview</NavLink>
-                            <NavLink to="/admission/criteria" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">Admission Criteria</NavLink>
-                            <NavLink to="/admission/term-dates" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">Term dates</NavLink>
-                            <NavLink to="/admission/fee" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">Fee Payment</NavLink>
-                            <NavLink to="/admission/apply" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">How To Apply</NavLink>
+                            <NavLink to="/admission/overview" onClick={toggleMenu} className="block py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">Overview</NavLink>
+                            <NavLink to="/admission/criteria" onClick={toggleMenu} className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">Admission Criteria</NavLink>
+                            <NavLink to="/admission/term-dates" onClick={toggleMenu} className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">Term dates</NavLink>
+                            <NavLink to="/admission/fee" onClick={toggleMenu} className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">Fee Payment</NavLink>
+                            <NavLink to="/admission/apply" onClick={toggleMenu} className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">How To Apply</NavLink>
                             </div>
                             </div>
                         </div>
