@@ -136,7 +136,6 @@ const Navbar: React.FC = () => {
                             <NavLink to="/about/events" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-base poppins-regular">Events</NavLink>
                             <NavLink to="/about/games" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-base poppins-regular">Games and Sports</NavLink>
                             <NavLink to="/about/clubs" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-base poppins-regular">Clubs and Societies</NavLink>
-                            <NavLink to="/about/leadership" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-base poppins-regular">Student Leadership</NavLink>
                             <NavLink to="/about/facilities" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-base poppins-regular">Facilities and Amenities</NavLink>
                             
                             </div>
@@ -226,7 +225,6 @@ const Navbar: React.FC = () => {
                             <NavLink to="/about/events" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">Events</NavLink>
                             <NavLink to="/about/games" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">Games and Sports</NavLink>
                             <NavLink to="/about/clubs" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">Clubs and Societies</NavLink>
-                            <NavLink to="/about/leadership" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">Student Leadership</NavLink>
                             <NavLink to="/about/facilities" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">Facilities and Amenities</NavLink>
                             
                             </div>

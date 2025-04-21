@@ -181,7 +181,7 @@ const OurHistory: React.FC = () => {
       <div className=" flex flex-col lg:flex-row items-center justify-evenly gap-6 py-8 md:py-16 px-4 md:px-6 poppins-regular bg-gradient-to-b to-[#9dffd37b] from-white"
       >
         <div>
-        <h3 className="text-2xl md:text-4xl font-bold text-center text-green-800 mb-12 drop-shadow-sm">
+        <h3 className="text-3xl md:text-5xl font-bold text-center text-green-800 mb-12 drop-shadow-sm">
           🎤 Voices of Our School
         </h3>
 

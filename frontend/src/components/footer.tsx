@@ -48,7 +48,6 @@ const Footer: React.FC = () => {
               <li><Link to='/about/faq' className="flex items-center hover:text-[#9dffd3]"><FaQuestion className="mr-3"/>FAQs</Link></li>
               <li><Link to="/about/games" className=" flex items-center hover:text-[#9dffd3]"><IoMdFootball className="mr-3"/>Games and Sports</Link></li>
               <li><Link to="/about/clubs" className="flex items-center hover:text-[#9dffd3]"><HiUserGroup className="mr-3"/>Clubs and Societies</Link></li>
-              <li><Link to="/about/leadership" className="flex items-center hover:text-[#9dffd3]"><PiStudentBold className="mr-3"/>Student Leadership</Link></li>
               <li><Link to="/about/facilities" className="flex items-center hover:text-[#9dffd3] whitespace-nowrap"><FaBuildingUser className="mr-3"/>Facilities and Amenities</Link></li>
             </ul>
             </div>

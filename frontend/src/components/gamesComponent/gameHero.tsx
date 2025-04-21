@@ -14,7 +14,7 @@ const heroImages = [
 
 export default function GamesPageHeader() {
     return (
-        <div className="relative w-full h-auto md:h-[50vh] overflow-hidden shadow-2xl">
+        <div className="relative w-full h-auto md:h-[60vh] overflow-hidden shadow-2xl">
           {/* Background Slider */}
           <Swiper
             modules={[Autoplay]}
@@ -23,14 +23,16 @@ export default function GamesPageHeader() {
             className="absolute inset-0 z-0"
           >
             {heroImages.map((src, index) => (
-              <SwiperSlide key={index}>
+              <SwiperSlide key={index} className="w-full h-full">
+              <div className="relative w-full h-[60vh]">
                 <img
                   src={src}
-                  alt={`Games highlight ${index + 1}`}
-                  className="w-full h-full object-cover object-[center_30%] md:object-[center_50%] lg:object-[center_70%]"
+                  alt={`Club highlight ${index + 1}`}
+                  className="w-full h-full object-cover object-center"
                 />
                 <div className="absolute inset-0 bg-black opacity-50" />
-              </SwiperSlide>
+              </div>
+            </SwiperSlide>
             ))}
           </Swiper>
     
