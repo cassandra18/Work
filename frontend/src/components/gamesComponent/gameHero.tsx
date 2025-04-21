@@ -44,6 +44,7 @@ export default function GamesPageHeader() {
               transition={{ duration: 0.8 }}
               className="text-white max-w-3xl text-green-"
             >
+              <Trophy className="text-yellow-500 w-8 h-8 md:w-10 md:h-10 animate-bounce" />
               <h1 className="text-2xl md:text-5xl font-bold md:mb-4 mb-2">
                 Games & Sports
               </h1>

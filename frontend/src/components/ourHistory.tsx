@@ -80,7 +80,7 @@ const OurHistory: React.FC = () => {
 
   return (
     <div className="  poppins-regular">
-      <h2 className="text-2xl md:text-4xl font-bold text-center my-7 md:my-12 text-green-800 ">
+      <h2 className="text-3xl md:text-5xl font-bold text-center my-7 md:my-12 text-green-800 ">
         🧭 Our School Journey
       </h2>
 
@@ -141,7 +141,7 @@ const OurHistory: React.FC = () => {
 
       {/* Fun facts section */}
       <div className="bg-gradient-to-b from-green-100 to-white-50 mt-20 py-8 md:py-16 px-4 md:px-6 poppins-regular">
-        <h3 className="text-2xl md:text-4xl font-bold text-center text-green-900 mb-12 drop-shadow-md">
+        <h3 className="text-3xl md:text-5xl font-bold text-center text-green-900 mb-12 drop-shadow-md">
           🌟 Fun Facts About Our School
         </h3>
 

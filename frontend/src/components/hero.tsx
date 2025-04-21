@@ -50,7 +50,7 @@ const HeroSection: React.FC = () => {
                                     </motion.h1>
 
                                     <motion.p 
-                                        className="text-sm md:text-base px-4 py-2 rounded-md mt-4"
+                                        className="text-base md:text-lg px-4 py-2 rounded-md mt-4"
                                         initial={{ opacity: 0, y: 50 }}
                                         animate={{ opacity: 1, y: 0 }}
                                         exit={{ opacity: 0, y: 50 }} 
