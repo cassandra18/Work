@@ -43,7 +43,7 @@ export default function GamesPageHeader() {
               className="text-white max-w-3xl text-green-"
             >
               <h1 className="text-2xl md:text-5xl font-bold md:mb-4 mb-2">
-                Games & Sports at CBC Kericho
+                Games & Sports
               </h1>
               <p className="md:text-lg md:mb-6 mb-2 text-gray-200">
                 Celebrating teamwork, talent, and triumphs in and out of the classroom.

@@ -177,7 +177,7 @@ export default function InternalTournaments() {
           <h3 className="text-3xl font-bold text-green-700 mb-4">
             🥇 Top House Points
           </h3>
-          <div className="bg-black text-white rounded-xl p-6 shadow-lg">
+          <div className="bg-[#0C834E] text-white text-lg rounded-xl p-6 shadow-lg">
             {topHousePoints.map((house, index) => (
               <motion.div
                 key={index}
