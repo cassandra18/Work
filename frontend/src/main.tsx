@@ -24,6 +24,9 @@ import AdmissionsOverview from './pages/admissionsOverview.tsx';
 import AdmissionCriteria from './pages/admissionCriteria.tsx';
 import KeyDatesFees from './pages/admissionsTermdates&Fees.tsx';
 import HowToApply from './pages/howToApply.tsx';
+import Gallery from './pages/gallery.tsx';
+import ContactPage from './pages/contact.tsx';
+
 
 const router = createBrowserRouter([
   {
@@ -109,6 +112,14 @@ const router = createBrowserRouter([
             element: <HowToApply />,
           }
         ]
+      },
+      {
+        path: '/gallery',
+        element: <Gallery />,
+      }, 
+      {
+        path: '/contact',
+        element: <ContactPage />,
       }
     ],
   }
