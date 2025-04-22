@@ -21,6 +21,7 @@ import AboutResults from './pages/aboutResults.tsx';
 import AboutDepartments from './pages/aboutDepartments.tsx';
 import Admissions from './pages/admissionsPage.tsx';
 import AdmissionsOverview from './pages/admissionsOverview.tsx';
+import AdmissionCriteria from './pages/admissionCriteria.tsx';
 
 const router = createBrowserRouter([
   {
@@ -92,6 +93,10 @@ const router = createBrowserRouter([
           {
             path: '/admission/overview',
             element: <AdmissionsOverview />,
+          },
+          {
+            path: '/admission/criteria',
+            element: <AdmissionCriteria />,
           }
         ]
       }

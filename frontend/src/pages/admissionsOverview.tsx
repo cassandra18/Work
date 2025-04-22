@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import PrincipalMessage from '../components/admission/principalMessage';
+import CTA from "../components/cta";
+
 const features = [
     {
       title: "🌟 Why Choose CBC Kericho?",
@@ -83,6 +85,8 @@ export default function AdmissionOverview() {
             )}
           </motion.div>
         ))}
+
+        <CTA/>
       </div>
     </div>
   );
