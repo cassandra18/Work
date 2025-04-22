@@ -28,7 +28,9 @@ const PolicyAcknowledgement: React.FC = () => {
                 className="flex justify-center gap-8 mt-4 text-lg"
             >
                 <a
-                    href="https://docs.google.com/document/d/18NQQvAb6X1vPYKxLqChkZOjTCvijZsaVzzUpbH6T-rM/edit?usp=sharing"
+                    href="/documents/CBC_KERICHO_SCHOOL_POLICIES.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="bg-green-800 text-white py-2 px-6 rounded-md hover:bg-green-700 transition-all"
                 >
                     Download Policies PDF and Sign 
