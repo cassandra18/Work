@@ -22,6 +22,8 @@ import AboutDepartments from './pages/aboutDepartments.tsx';
 import Admissions from './pages/admissionsPage.tsx';
 import AdmissionsOverview from './pages/admissionsOverview.tsx';
 import AdmissionCriteria from './pages/admissionCriteria.tsx';
+import KeyDatesFees from './pages/admissionsTermdates&Fees.tsx';
+
 
 const router = createBrowserRouter([
   {
@@ -97,6 +99,10 @@ const router = createBrowserRouter([
           {
             path: '/admission/criteria',
             element: <AdmissionCriteria />,
+          },
+          {
+            path: '/admission/term-dates',
+            element: <KeyDatesFees />,
           }
         ]
       }
