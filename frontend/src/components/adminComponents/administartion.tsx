@@ -6,7 +6,6 @@ import "slick-carousel/slick/slick-theme.css";
 import Tilt from 'react-parallax-tilt';
 import HeroBanner from './herobanner';
 import FilterTabs from './filterTabs';
-import PrincipalMessage from './principalMessage';
 import CTA from '../cta';
 
 
@@ -522,11 +521,7 @@ const Administration: React.FC = () => {
       </div>
     </div>
     <div className='border-t border-green-600 p-6 md:p-12 flex flex-col md:flex-row items-center gap-6 justify-evenly'>
-      {/* Principal's message */}
-      <div className='w-full md:w-1/2'>
-      <PrincipalMessage/>
-      </div>
-    
+      
     <CTA/>
     </div>
 

@@ -4,7 +4,6 @@ import { MdMarkunreadMailbox } from 'react-icons/md';
 import { FaPhoneAlt, FaNewspaper, FaQuestion} from 'react-icons/fa';
 import { IoIosMail, IoMdClock, IoMdFootball } from "react-icons/io";
 import { HiUserGroup } from "react-icons/hi2";
-import { PiStudentBold } from "react-icons/pi";
 import { FaBuildingUser, FaSchoolFlag , FaRegAddressCard} from "react-icons/fa6";
 import { MdOutlineAddReaction } from "react-icons/md";
 import { GrGallery } from "react-icons/gr";

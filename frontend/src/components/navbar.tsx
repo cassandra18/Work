@@ -168,8 +168,7 @@ const Navbar: React.FC = () => {
                             <div>
                             <NavLink to="/admission/overview" className="block py-2 px-1 hover:bg-gray-100 text-[#0C834E] hover:text-black text-base  poppins-regular">Overview</NavLink>
                             <NavLink to="/admission/criteria" className="block  py-2 px-1 hover:bg-gray-100 text-[#0C834E] hover:text-black text-base poppins-regular">Admission Criteria</NavLink>
-                            <NavLink to="/admission/term-dates" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-base poppins-regular">Term dates</NavLink>
-                            <NavLink to="/admission/fee" className="block  py-2 px-1 hover:bg-gray-100 text-[#0C834E] hover:text-black text-base poppins-regular">Fee Payment</NavLink>
+                            <NavLink to="/admission/term-dates" className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-base poppins-regular">Term dates & Fees</NavLink>
                             <NavLink to="/admission/apply" className="block  py-2 px-1 hover:bg-gray-100 text-[#0C834E] hover:text-black text-base poppins-regular">How To Apply</NavLink>
                             </div>
                             </div>
@@ -254,8 +253,7 @@ const Navbar: React.FC = () => {
                             <div>
                             <NavLink to="/admission/overview" onClick={toggleMenu} className="block py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">Overview</NavLink>
                             <NavLink to="/admission/criteria" onClick={toggleMenu} className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">Admission Criteria</NavLink>
-                            <NavLink to="/admission/term-dates" onClick={toggleMenu} className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">Term dates</NavLink>
-                            <NavLink to="/admission/fee" onClick={toggleMenu} className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">Fee Payment</NavLink>
+                            <NavLink to="/admission/term-dates" onClick={toggleMenu} className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">Term dates & Fees</NavLink>
                             <NavLink to="/admission/apply" onClick={toggleMenu} className="block  py-2 hover:bg-gray-100 text-[#0C834E] hover:text-black text-sm poppins-regular">How To Apply</NavLink>
                             </div>
                             </div>

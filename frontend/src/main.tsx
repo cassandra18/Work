@@ -19,6 +19,8 @@ import AboutClubsAndSocieties from './pages/aboutClubsandSocieties.tsx';
 import AboutFacilities from './pages/aboutFacilities.tsx';
 import AboutResults from './pages/aboutResults.tsx';
 import AboutDepartments from './pages/aboutDepartments.tsx';
+import Admissions from './pages/admissionsPage.tsx';
+import AdmissionsOverview from './pages/admissionsOverview.tsx';
 
 const router = createBrowserRouter([
   {
@@ -80,6 +82,16 @@ const router = createBrowserRouter([
           {
             path: '/about/departments',
             element: <AboutDepartments/>
+          }
+        ]
+      },
+      {
+        path: '/admission',
+        element: <Admissions />,
+        children: [
+          {
+            path: '/admission/overview',
+            element: <AdmissionsOverview />,
           }
         ]
       }
