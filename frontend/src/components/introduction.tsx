@@ -61,8 +61,8 @@ const Introduction: React.FC = () => {
 
           {/* Application CTA */}
           <motion.div
-            className='relative flex justify-between items-center rounded-xl overflow-hidden p-4 md:p-6 bg-cover bg-center shadow-lg'
-            style={{ backgroundImage: `url('/images/students.jpeg')` }}
+            className='relative flex justify-between items-center rounded-xl overflow-hidden p-4 md:p-8 bg-cover bg-center shadow-lg'
+            style={{ backgroundImage: `url('/images/students-coding1.jpg')` }}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8 }}

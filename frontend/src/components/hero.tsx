@@ -8,10 +8,10 @@ import { motion } from 'framer-motion';
 import { Swiper as SwiperClass } from 'swiper';
 
 const slides = [
-    { id: 1, image: '/images/school-image1.png', title: 'CBC-KERICHO', description: 'We are a school that is committed to providing quality education to our students', link: '/about/profile' },
-    { id: 2, image: '/images/students.jpeg', title: 'Vision, Mission and Values', description: 'Our vision is to provide quality education to our students', link: '/about/vision' },
-    { id: 3, image: '/images/students-with-instruments2.jpeg', title: 'Clubs and Societies', description: 'We have a variety of clubs and societies that students can join', link: '/clubs' },
-    { id: 4, image: '/images/headteacher.jpeg', title: 'Our Policies', description: 'Our policies are designed to ensure that our students get the best education', link: '/about/policies' }
+    { id: 1, image: '/images/cbc-kericho.jpg', title: 'CBC-KERICHO', description: 'We are a school that is committed to providing quality education to our students', link: '/about/profile' },
+    { id: 2, image: '/images/students.jpg', title: 'Vision, Mission and Values', description: 'Our vision is to provide quality education to our students', link: '/about/vision' },
+    { id: 3, image: '/images/students-with-instruments.jpg', title: 'Clubs and Societies', description: 'We have a variety of clubs and societies that students can join', link: '/clubs' },
+    { id: 4, image: '/images/teacher.jpg', title: 'Our Policies', description: 'Our policies are designed to ensure that our students get the best education', link: '/about/policies' }
 ];
 
 const HeroSection: React.FC = () => {
@@ -32,7 +32,7 @@ const HeroSection: React.FC = () => {
             >
                 {slides.map((slide, index) => (
                     <SwiperSlide key={slide.id} className="relative">
-                        <img src={slide.image} alt={slide.title} className="w-full h-full object-cover" />
+                        <img src={slide.image} alt={slide.title} className="w-full h-full object-cover object-center" />
                         {/* Transparent Black Overlay */}
                         <div className="absolute inset-0 bg-black" style={{ backgroundColor: "rgba(0, 0, 0, 0.3)" }}></div>
                         <div className="absolute inset-0 flex flex-col justify-center items-start pl-8 md:pl-20 lg:pl-48 text-white">
