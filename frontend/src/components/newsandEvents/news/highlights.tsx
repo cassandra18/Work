@@ -90,6 +90,7 @@ const Highlights: React.FC = () => {
                       <img
                           src={highlight.image}
                           alt={highlight.title}
+                          loading="lazy"
                           className="w-96 h-auto rounded-xl shadow-md"
                       />
                   </div>

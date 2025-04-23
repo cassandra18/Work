@@ -132,6 +132,7 @@ export default function KeyFacilities() {
 
             <motion.img
               src={facilitiesData[activeTab].image}
+              loading="lazy"
               alt={facilitiesData[activeTab].title}
               className="md:w-3/4 h-auto rounded-xl mb-6 shadow-lg"
               initial={{ opacity: 0, y: 20 }}

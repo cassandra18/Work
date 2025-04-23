@@ -77,6 +77,7 @@ export default function ClubAndSocieties() {
             <img
               src={club.image}
               alt={club.name}
+              loading="lazy"
               className="w-full h-48 object-cover"
             />
             <div className="p-4">
@@ -114,6 +115,7 @@ export default function ClubAndSocieties() {
             <img
               src={club.image}
               alt={club.name}
+              loading="lazy"
               className="w-1/2 h-full object-cover"
             />
             <div className="p-4 w-1/2 flex flex-col justify-between gap-2">

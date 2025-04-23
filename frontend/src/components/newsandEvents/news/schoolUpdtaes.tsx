@@ -96,7 +96,7 @@ const SchoolUpdates: React.FC = () => {
                             className="min-w-[280px] max-w-sm bg-green-50 rounded-xl shadow-md overflow-hidden"
                             {...fadeInUp(0.6 + i * 0.1)}
                         >
-                            <img src={item.img} alt={item.title} className="w-full h-40 object-cover" />
+                            <img src={item.img} alt={item.title} className="w-full h-40 object-cover" loading="lazy"/>
                             <div className="p-4">
                                 <h4 className="font-semibold text-green-800">{item.title}</h4>
                                 <p className="text-sm text-green-700">{item.description}</p>

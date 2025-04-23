@@ -118,6 +118,7 @@ const OurHistory: React.FC = () => {
                   <img
                     src={selectedImage}
                     alt="Enlarged"
+                    loading="lazy"
                     className="max-h-[80vh] max-w-[90vw] rounded-lg shadow-lg"
                   />
                 </div>
@@ -132,6 +133,7 @@ const OurHistory: React.FC = () => {
               <img
                 src={milestone.image}
                 alt={milestone.title}
+                loading="lazy"
                 className="w-full h-full object-cover"
               />
             </motion.div>

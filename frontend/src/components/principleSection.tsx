@@ -23,7 +23,7 @@ const PricipleSection: React.FC = () => {
                         EMBODIMENT OF HOPE
                     </h3>
 
-                    <img src='/images/principle.jpeg' alt='principle-image' className='w-full sm:w-2/3 '></img>
+                    <img src='/images/principle.jpeg' alt='principle-image' className='w-full sm:w-2/3 ' loading="lazy"></img>
 
                     {/* Mobile Title (inline & only visible on small screens) */}
                     <div>

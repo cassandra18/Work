@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
       <div className="flex items-start justify-center lg:justify-start gap-20 px-4 max-w-7xl mx-auto">
         <div className="hidden lg:flex justify-center items-center mb-4">
             <div    className="relative">
-                <img src="/images/school-logo.png" alt="Logo" className="lg:h-44 lg:w-44 relative" />
+                <img src="/images/school-logo.png" alt="Logo" className="lg:h-44 lg:w-44 relative" loading="lazy" />
                 <h2 className="xlg:text-2xl md:text-xl poppins-bold absolute bottom-0 left-1/2 -translate-x-1/2 whitespace-nowrap text-[#9dffd3]">C.B.C KERICHO</h2>
             </div>
         </div>

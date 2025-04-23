@@ -157,6 +157,7 @@ export default function InternalTournaments() {
                 <img
                   src={student.photo}
                   alt={student.name}
+                  loading="lazy"
                   className="w-20 h-20 rounded-full object-cover border-4 border-green-200"
                 />
                 <div>
@@ -202,6 +203,7 @@ export default function InternalTournaments() {
                 <img
                   src={achieve.photo}
                   alt={achieve.student}
+                  loading="lazy"
                   className="w-20 h-20 rounded-full object-cover border-4 border-green-200 shadow-md"
                 />
                 <div>

@@ -283,7 +283,7 @@ const Administration: React.FC = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
               >
-                <img src={leader.image} alt={leader.name} className="w-full h-60 object-cover shadow-lg rounded-b-lg " />
+                <img src={leader.image} alt={leader.name} className="w-full h-60 object-cover shadow-lg rounded-b-lg " loading="lazy"/>
                 <div className="p-4">
                   <h3 className="text-2xl font-semibold text-green-900">{leader.name}</h3>
                   <p className="text-sm text-green-700 font-medium mb-2">{leader.title}</p>
@@ -318,7 +318,7 @@ const Administration: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: index * 0.2 }}
           >
-            <img src={leader.image} alt={leader.name} className="w-full h-60 object-cover shadow-lg rounded-b-lg" />
+            <img src={leader.image} alt={leader.name} className="w-full h-60 object-cover shadow-lg rounded-b-lg" loading="lazy"/>
             <div className="p-4">
               <h3 className="text-2xl font-semibold text-green-900">{leader.name}</h3>
               <p className="text-sm text-green-700 font-medium mb-2">{leader.title}</p>
@@ -348,7 +348,7 @@ const Administration: React.FC = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
               >
-                <img src={hods.image} alt={hods.name} className="w-full h-60 object-cover shadow-lg rounded-b-lg " />
+                <img src={hods.image} alt={hods.name} className="w-full h-60 object-cover shadow-lg rounded-b-lg " loading="lazy"/>
                 <div className="p-4">
                   <h3 className="text-2xl font-semibold text-green-900">{hods.name}</h3>
                   <p className="text-sm text-green-700 font-medium mb-2">{hods.title}</p>
@@ -381,7 +381,7 @@ const Administration: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: index * 0.2 }}
           >
-            <img src={hods.image} alt={hods.name} className="w-full h-60 object-cover shadow-lg rounded-b-lg" />
+            <img src={hods.image} alt={hods.name} className="w-full h-60 object-cover shadow-lg rounded-b-lg" loading="lazy"/>
             <div className="p-4">
               <h3 className="text-2xl font-semibold text-green-900">{hods.name}</h3>
               <p className="text-sm text-green-700 font-medium mb-2">{hods.title}</p>
@@ -410,7 +410,7 @@ const Administration: React.FC = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
               >
-                <img src={support.image} alt={support.name} className="w-full h-60 object-cover shadow-lg rounded-b-lg " />
+                <img src={support.image} alt={support.name} className="w-full h-60 object-cover shadow-lg rounded-b-lg " loading="lazy"/>
                 <div className="p-4">
                   <h3 className="text-2xl font-semibold text-green-900">{support.name}</h3>
                   <p className="text-sm text-green-700 font-medium mb-2">{support.title}</p>
@@ -443,7 +443,7 @@ const Administration: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: index * 0.2 }}
           >
-            <img src={support.image} alt={support.name} className="w-full h-60 object-cover shadow-lg rounded-b-lg" />
+            <img src={support.image} alt={support.name} className="w-full h-60 object-cover shadow-lg rounded-b-lg" loading="lazy" />
             <div className="p-4">
               <h3 className="text-2xl font-semibold text-green-900">{support.name}</h3>
               <p className="text-sm text-green-700 font-medium mb-2">{support.title}</p>
@@ -472,7 +472,7 @@ const Administration: React.FC = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
               >
-                <img src={studentLeaders.image} alt={studentLeaders.name} className="w-full h-60 object-cover shadow-lg rounded-b-lg " />
+                <img src={studentLeaders.image} alt={studentLeaders.name} className="w-full h-60 object-cover shadow-lg rounded-b-lg " loading="lazy"/>
                 <div className="p-4">
                   <h3 className="text-2xl font-semibold text-green-900">{studentLeaders.name}</h3>
                   <p className="text-sm text-green-700 font-medium mb-2">{studentLeaders.title}</p>
@@ -505,7 +505,7 @@ const Administration: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: index * 0.2 }}
           >
-            <img src={studentLeaders.image} alt={studentLeaders.name} className="w-full h-60 object-cover shadow-lg rounded-b-lg" />
+            <img src={studentLeaders.image} alt={studentLeaders.name} className="w-full h-60 object-cover shadow-lg rounded-b-lg" loading="lazy"/>
             <div className="p-4">
               <h3 className="text-2xl font-semibold text-green-900">{studentLeaders.name}</h3>
               <p className="text-sm text-green-700 font-medium mb-2">{studentLeaders.title}</p>

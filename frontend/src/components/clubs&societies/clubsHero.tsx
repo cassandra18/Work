@@ -27,6 +27,7 @@ export default function ClubsHeader() {
             <div className="relative w-full h-[60vh]">
               <img
                 src={src}
+                loading="lazy"
                 alt={`Club highlight ${index + 1}`}
                 className="w-full h-full object-cover object-center"
               />

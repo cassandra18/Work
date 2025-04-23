@@ -29,7 +29,7 @@ const MonthlySpotlight: React.FC = () => {
           </h3>
           {/* Image + name + description */}
           <div className="flex items-center space-x-4 md:my-10 my-5">
-            <img src="/images/head-boy-primary.jpeg" alt="head-boy-primary" className="w-32 md:w-48 h-auto rounded-full"></img>
+            <img src="/images/head-boy-primary.jpeg" alt="head-boy-primary" loading="lazy" className="w-32 md:w-48 h-auto rounded-full"></img>
           
             <div>
             <p className="text-gray-700">
@@ -50,7 +50,7 @@ const MonthlySpotlight: React.FC = () => {
           </h3>
           {/* solar image + text */}
           <div className="flex items-center space-x-4 md:my-10 my-5">
-            <img src="/images/solar.png" alt="solar" className="w-32 md:w-48 h-auto rounded-full mb-4"></img>
+            <img src="/images/solar.png" alt="solar" className="w-32 md:w-48 h-auto rounded-full mb-4" loading="lazy"></img>
           
             <div>
             <p className="text-lg text-gray-800 font-medium mb-1">

@@ -74,6 +74,7 @@ export default function Gallery() {
               <img
                 src={item.src}
                 alt={item.alt}
+                loading="lazy"
                 className="rounded-lg shadow-md w-full h-40 object-cover"
               />
             )}
@@ -108,6 +109,7 @@ export default function Gallery() {
                 <img
                   src={selectedMedia.src}
                   alt="Full View"
+                  loading="lazy"
                   className="w-full rounded-lg"
                 />
               )}

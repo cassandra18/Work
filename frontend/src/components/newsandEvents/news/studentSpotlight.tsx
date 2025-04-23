@@ -55,6 +55,7 @@ const StudentSpotlight: React.FC = () => {
                             <img
                                 src={student.image}
                                 alt={student.name}
+                                loading="lazy"
                                 className="w-full h-48 object-cover rounded-b-lg"
                             />
                             <div className="p-5">

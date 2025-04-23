@@ -91,7 +91,7 @@ const Navbar: React.FC = () => {
        <Link to='/'>
         <div className="flex items-center">
            
-            <img src="/images/school-logo.png" alt='school-logo' className="w-24 md:w-28 h-auto"/>
+            <img src="/images/school-logo.png" alt='school-logo' className="w-24 md:w-28 h-auto" loading="lazy"/>
             <h1 className="text-xl md:text-2xl font-bold text-[#0C834E]">C.B.C KERICHO</h1>
         
         </div>

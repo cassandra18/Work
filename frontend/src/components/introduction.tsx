@@ -22,6 +22,7 @@ const Introduction: React.FC = () => {
             <img
               src='/images/school-image.jpeg'
               alt='school'
+              loading="lazy"
               className='rounded-md shadow-md mb-4'
             />
             <h2 className='text-2xl font-bold text-[#0C834E] mb-1 p-2'>Our Motto:</h2>

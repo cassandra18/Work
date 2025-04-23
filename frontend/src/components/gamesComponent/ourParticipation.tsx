@@ -104,6 +104,7 @@ const EventParticipation = () => {
                 <div className="lg:w-1/2">
                   <img
                     src={event.image}
+                    loading="lazy"
                     alt={event.title}
                     className="w-96 max-w-full h-auto rounded-xl shadow-md"
                   />

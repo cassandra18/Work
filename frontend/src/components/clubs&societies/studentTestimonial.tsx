@@ -47,6 +47,7 @@ export default function StudentTestimonials() {
     >
       <div className="w-16 h-16 rounded-full overflow-hidden mb-3 border-4 border-green-300 shadow-lg">
         <img
+        loading="lazy"
           src={testimonials[index].image}
           alt={testimonials[index].name}
           className="w-full h-full object-cover"

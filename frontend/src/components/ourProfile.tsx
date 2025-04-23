@@ -136,6 +136,7 @@ const OurProfile: React.FC = () => {
           <img
             src="/images/director.jpeg"
             alt="director image"
+            loading="lazy"
             className="h-32 w-32 md:w-48 md:h-48 rounded-full mb-4"
           />
           <p className="text-md md:text-lg leading-relaxed">
