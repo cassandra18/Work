@@ -56,7 +56,7 @@ const Introduction: React.FC = () => {
             Education here goes beyond textbooks — we focus on hands-on learning, critical thinking, and real-life application. Learners are empowered to thrive, with supportive teachers guiding them every step of the way.
           </p>
 
-          <Link to='/about' className='text-[#0C834E] hover:text-blue-600 font-semibold'>
+          <Link to='/about/profile' className='text-[#0C834E] hover:text-blue-600 font-semibold'>
             READ MORE...
           </Link>
 
@@ -73,7 +73,7 @@ const Introduction: React.FC = () => {
               Ready to join us?
             </h2>
             <Link
-              to='/application'
+              to='/application/apply'
               className='relative z-10 flex items-center gap-2 bg-white text-[#0C834E] hover:bg-[#0C834E] hover:text-white font-semibold py-2 px-4 rounded-md transition'
             >
               <GiNotebook className='text-xl' /> How to Apply
