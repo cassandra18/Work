@@ -73,7 +73,7 @@ const Introduction: React.FC = () => {
               Ready to join us?
             </h2>
             <Link
-              to='/application/apply'
+              to='/admission/apply'
               className='relative z-10 flex items-center gap-2 bg-white text-[#0C834E] hover:bg-[#0C834E] hover:text-white font-semibold py-2 px-4 rounded-md transition'
             >
               <GiNotebook className='text-xl' /> How to Apply
