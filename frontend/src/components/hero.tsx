@@ -34,7 +34,7 @@ const HeroSection: React.FC = () => {
                     <SwiperSlide key={slide.id} className="relative">
                         <img src={slide.image} alt={slide.title} className="w-full h-full object-cover object-center" loading="lazy" />
                         {/* Transparent Black Overlay */}
-                        <div className="absolute inset-0 bg-black" style={{ backgroundColor: "rgba(0, 0, 0, 0.3)" }}></div>
+                        <div className="absolute inset-0 bg-black" style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}></div>
                         <div className="absolute inset-0 flex flex-col justify-center items-start pl-8 md:pl-20 lg:pl-48 text-white">
                             {/* ✅ Only animate the active slide */}
                             {index === activeIndex && (
