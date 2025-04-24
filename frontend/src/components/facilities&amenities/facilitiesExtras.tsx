@@ -160,7 +160,9 @@ export default function FacilitiesExtras() {
                 facilities@schoolname.com
               </a>
             </li>
-            <li>📞 Phone: +254 712 345678</li>
+            <li>
+              <a href="tel:+254712345678">📞 Phone: +254 712 345678</a>
+              </li>
             <li>🏢 Office of Student Affairs, Main Building</li>
           </ul>
           </div>

@@ -95,8 +95,16 @@ export default function KeyDatesFees() {
             <div>
               <h3 className="font-medium text-green-700 mb-1">📋 Policies</h3>
               <p>Late payments may incur penalties. For special payment arrangements, kindly contact the bursar or administration office directly at:</p>
-                <p className="font-semibold py-3">📞 +254 700 000 000</p>
-                <p className="font-semibold">📧 bursar@cbckericho.co.ke</p>
+                <p className="font-semibold py-3">
+                  <a href="tel:+254700000000">
+                  📞 +254 700 000 000
+                  </a>
+                </p>
+                <p className="font-semibold">
+                  <a href="mailto:bursar@cbckericho.co.ke">
+                  📧 bursar@cbckericho.co.ke
+                  </a>
+                </p>
             </div>
           </div>
         </motion.div>

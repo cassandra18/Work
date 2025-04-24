@@ -4,7 +4,8 @@ import { FileDown } from "lucide-react";
 const steps = [
   {
     title: "1. Visit the School or Website",
-    description: "Learn more about CBC Kericho by visiting us or browsing our website.",
+    description:
+      "Learn more about CBC Kericho by visiting us or browsing our website.",
     icon: "🏫",
   },
   {
@@ -14,7 +15,8 @@ const steps = [
   },
   {
     title: "3. Fill in the Form",
-    description: "Complete all required fields carefully and attach necessary documents.",
+    description:
+      "Complete all required fields carefully and attach necessary documents.",
     icon: "✍️",
   },
   {
@@ -26,10 +28,11 @@ const steps = [
       </>
     ),
     icon: "📨",
-  },  
+  },
   {
     title: "5. Wait for Feedback",
-    description: "Our team will review and get in touch for next steps like interviews or placement.",
+    description:
+      "Our team will review and get in touch for next steps like interviews or placement.",
     icon: "📞",
   },
 ];
@@ -53,7 +56,8 @@ export default function HowToApply() {
           📬 How to Apply
         </h1>
         <p className="text-gray-600 max-w-2xl mx-auto md:text-lg">
-          Follow these simple steps to join CBC Kericho and become part of a nurturing learning environment.
+          Follow these simple steps to join CBC Kericho and become part of a
+          nurturing learning environment.
         </p>
       </motion.div>
 
@@ -68,7 +72,9 @@ export default function HowToApply() {
             className="bg-white p-3 md:p-6 rounded-2xl shadow hover:shadow-md transition-shadow border-l-4 border-green-400"
           >
             <div className="text-xl md:text-3xl md:mb-4 mb-2">{step.icon}</div>
-            <h3 className="text-xl font-semibold text-green-700 mb-2">{step.title}</h3>
+            <h3 className="text-xl font-semibold text-green-700 mb-2">
+              {step.title}
+            </h3>
             <p className="text-gray-700">{step.description}</p>
           </motion.div>
         ))}
@@ -85,17 +91,20 @@ export default function HowToApply() {
           <FileDown size={18} /> Download Application Form
         </a>
         <br />
-        
       </div>
       <div className="w-fit mx-auto border border-green-600 text-gray-500 py-3 px-6 rounded-4xl space-y-2">
-  <div className="flex items-center gap-2 font-bold text-lg md:text-xl">
-    <span className="text-green-700">Contact Admissions Office at:</span>
-  </div>
-  <p className="font-semibold ">📞 +254 700 000 000</p>
-  <p className="font-semibold">📧 admissions@cbckericho.co.ke</p>
-</div>
-
-
+        <div className="flex items-center gap-2 font-bold text-lg md:text-xl">
+          <span className="text-green-700">Contact Admissions Office at:</span>
+        </div>
+        <p className="font-semibold ">
+          <a href="tel:+254700000000">📞 +254 700 000 000</a>
+        </p>
+        <p className="font-semibold">
+          <a href="mailto:admissions@cbckericho.co.ke">
+            📧 admissions@cbckericho.co.ke
+          </a>
+        </p>
+      </div>
     </div>
   );
 }
