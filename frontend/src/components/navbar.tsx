@@ -81,9 +81,9 @@ const Navbar: React.FC = () => {
               
             </li>
             <li className="flex items-center md:text-lg">
-              <a href="mailto:info@cbckericho.jn.ke" className="flex items-center">
+              <a href="mailto:info@lightjunior.jn.ke" className="flex items-center">
               <IoIosMail className="mr-2 text-2xl" />
-              info@cbckericho.jn.ke
+              info@lightjunioracademy.jn.ke
               </a>
             </li>
           </ul>
@@ -97,7 +97,7 @@ const Navbar: React.FC = () => {
         <div className="flex items-center">
            
             <img src="/images/school-logo.png" alt='school-logo' className="w-24 md:w-28 h-auto" loading="lazy"/>
-            <h1 className="text-xl md:text-2xl font-bold text-[#0a5835]">C.B.C KERICHO</h1>
+            <h1 className="text-xl md:text-2xl font-bold text-[#0a5835]">Light Junior Academy</h1>
         
         </div>
         </Link>
@@ -127,7 +127,7 @@ const Navbar: React.FC = () => {
                         >
                           <div className="flex justify-between px-3 py-2">
                             <div>
-                              <p className="text-black border-b border-[rgba(0,0,0,0.3)] mb-2">About CBC Kericho</p>
+                              <p className="text-black border-b border-[rgba(0,0,0,0.3)] mb-2">About Light Junior Academy</p>
                             <NavLink to="/about/profile" className="block py-2 hover:bg-gray-100 text-[#0a5835] hover:text-black text-base poppins-regular">Our Profile</NavLink>
                             <NavLink to="/about/history" className="block  py-2 hover:bg-gray-100 text-[#0a5835] hover:text-black text-base poppins-regular">Our History</NavLink>
                             <NavLink to="/about/vision" className="block  py-2 hover:bg-gray-100 text-[#0a5835] hover:text-black text-base poppins-regular">Vision, Mission & Values</NavLink>
@@ -215,7 +215,7 @@ const Navbar: React.FC = () => {
                         >
                           <div className="flex flex-col justify-between">
                             <div>
-                              <p className="text-black border-b border-[rgba(0,0,0,0.3)] mb-2">About CBC Kericho</p>
+                              <p className="text-black border-b border-[rgba(0,0,0,0.3)] mb-2">About Light Junior Academy</p>
                             <NavLink to="/about/profile" onClick={toggleMenu} className="block py-2 hover:bg-gray-100 text-[#0a5835] hover:text-black text-sm poppins-regular">Our Profile</NavLink>
                             <NavLink to="/about/history" onClick={toggleMenu} className="block  py-2 hover:bg-gray-100 text-[#0a5835] hover:text-black text-sm poppins-regular">Our History</NavLink>
                             <NavLink to="/about/vision" onClick={toggleMenu} className="block  py-2 hover:bg-gray-100 text-[#0a5835] hover:text-black text-sm poppins-regular">Vision, Mission & Values</NavLink>

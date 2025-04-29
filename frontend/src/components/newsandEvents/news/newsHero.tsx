@@ -41,7 +41,7 @@ const NewsHero: React.FC = () => {
                     className="max-w-xl text-lg md:text-xl text-white/90 drop-shadow-md"
                     {...fadeIn(0.4)}
                 >
-                    "Every Update Counts – Be Part of the CBC Kericho Story."
+                    "Every Update Counts – Be Part of the Light Junior Academy Story."
                 </motion.p>
 
                 <motion.button

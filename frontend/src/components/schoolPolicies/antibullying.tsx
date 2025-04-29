@@ -28,7 +28,7 @@ const AntiBullyingPolicy: React.FC = () => {
                 🤝 4. Anti-Bullying & Discipline Policy
             </motion.h2>
             <motion.p {...fadeIn(0.1)} className="mb-4 text-gray-800 leading-relaxed md:text-lg">
-                At CBC Kericho, we are committed to providing a <strong>safe, respectful, and inclusive environment</strong> for all students. Our <strong>Anti-Bullying & Discipline Policy</strong> ensures that any form of <strong>bullying</strong> is immediately addressed and that students understand the <strong>consequences of their actions</strong>.
+                At Light Junior Academy, we are committed to providing a <strong>safe, respectful, and inclusive environment</strong> for all students. Our <strong>Anti-Bullying & Discipline Policy</strong> ensures that any form of <strong>bullying</strong> is immediately addressed and that students understand the <strong>consequences of their actions</strong>.
             </motion.p>
 
             <ol className="space-y-3 text-gray-700 text-base md:text-lg">

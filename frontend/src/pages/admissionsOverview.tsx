@@ -5,7 +5,7 @@ import CTA from "../components/cta";
 
 const features = [
     {
-      title: "🌟 Why Choose CBC Kericho?",
+      title: "🌟 Why Choose Light Junior Academy?",
       description:
         "We offer CBC-focused learning, experienced teachers, and a nurturing environment that supports every child's growth.",
     },
@@ -24,7 +24,7 @@ const features = [
     {
       title: "📬 How to Apply",
       description:
-        "Follow a simple step-by-step guide on how to enroll your child at CBC Kericho.",
+        "Follow a simple step-by-step guide on how to enroll your child at Light Junior Academy.",
       link: "/admission/how-to-apply",
     },
   ];
@@ -46,7 +46,7 @@ export default function AdmissionOverview() {
         className="text-center mb-12"
       >
         <h1 className="text-3xl md:text-5xl font-bold text-green-700 mb-4">
-        🚀  Admissions at CBC Kericho
+        🚀  Admissions at Light Junior Academy
         </h1>
 
     

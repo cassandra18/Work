@@ -17,7 +17,7 @@ const leaders = [
     image: '/images/principle.jpeg',
     bio: 'Mr. Kiprono holds a Master’s Degree in Educational Leadership and has over 15 years of experience in guiding students and teachers toward excellence.',
     quote: '“Empowering learners, shaping the future.”',
-    email: 'john.kiprono@cbckericho.ac.ke'
+    email: 'john.kiprono@lightjunior.ac.ke'
   },
   {
     name: 'Mrs. Grace Cherono',
@@ -25,7 +25,7 @@ const leaders = [
     image: '/images/deputy.jpeg',
     bio: 'With a strong background in curriculum development, Mrs. Cherono supports academic innovation and student mentorship.',
     quote: '“Discipline and compassion create great leaders.”',
-    email: 'grace.cherono@cbckericho.ac.ke'
+    email: 'grace.cherono@lightjunior.ac.ke'
   },
   {
     name: 'Mr. Elijah Bett',
@@ -33,7 +33,7 @@ const leaders = [
     image: '/images/primary-head.jpeg',
     bio: 'Mr. Bett ensures a nurturing and engaging environment for our primary students while upholding CBC values.',
     quote: '“A strong foundation builds confident learners.”',
-    email: 'elijah.bett@cbckericho.ac.ke'
+    email: 'elijah.bett@lightjunior.ac.ke'
   },
   {
     name: 'Ms. Ruth Tanui',
@@ -41,7 +41,7 @@ const leaders = [
     image: '/images/junior-head.jpeg',
     bio: 'Ms. Tanui champions academic excellence and creativity for junior secondary learners.',
     quote: '“Each learner is a promise of a better tomorrow.”',
-    email: 'ruth.tanui@cbckericho.ac.ke'
+    email: 'ruth.tanui@lightjunior.ac.ke'
   },
 ];
 
@@ -54,7 +54,7 @@ const hods = [
         image: '/images/languages-head.jpeg',
         bio: 'Mr. Njiru is dedicated to enhancing language proficiency in both English and Kiswahili, fostering strong communication skills in students.',
         quote: '“Language is the key to unlocking the world.”',
-        email: 'peter.njiru@cbckericho.ac.ke'
+        email: 'peter.njiru@lightjunior.ac.ke'
       },
       {
         name: 'Ms. Jane Mwaura',
@@ -63,7 +63,7 @@ const hods = [
         image: '/images/maths-head.jpeg',
         bio: 'Ms. Mwaura brings a passion for problem-solving and critical thinking, leading the math department with innovative, hands-on teaching methods.',
         quote: '“Math is not just about numbers, it’s about thinking critically.”',
-        email: 'jane.mwaura@cbckericho.ac.ke'
+        email: 'jane.mwaura@lightjunior.ac.ke'
       },
       {
         name: 'Mr. David Langat',
@@ -72,7 +72,7 @@ const hods = [
         image: '/images/science-head1.jpeg',
         bio: 'Mr. Langat leads our science faculty, promoting inquiry-based learning aligned with CBC goals. He focuses on biology, chemistry, physics, and ICT.',
         quote: '“Let students explore, question, and grow.”',
-        email: 'david.langat@cbckericho.ac.ke'
+        email: 'david.langat@lightjunior.ac.ke'
       },
       {
         name: 'Ms. Rachel Kiptui',
@@ -81,7 +81,7 @@ const hods = [
         image: '/images/creative-head.jpeg',
         bio: 'Ms. Kiptui combines her love for the arts with physical education to nurture students’ creativity and teamwork in music, drama, and sports.',
         quote: '“Creativity is the bridge between imagination and reality.”',
-        email: 'rachel.kiptui@cbckericho.ac.ke'
+        email: 'rachel.kiptui@lightjunior.ac.ke'
       },
       {
         name: 'Mr. Mohammed Salim',
@@ -90,7 +90,7 @@ const hods = [
         image: '/images/sst-head.jpeg',
         bio: 'Mr. Chepchirchir ensures students gain a deep understanding of history, geography, and religious studies, emphasizing moral growth and global awareness.',
         quote: '“Understanding the past is the key to shaping the future.”',
-        email: 'john.chepchirchir@cbckericho.ac.ke'
+        email: 'john.chepchirchir@lightjunior.ac.ke'
       },
       {
         name: 'Ms. Emily Rotich',
@@ -99,7 +99,7 @@ const hods = [
         image: '/images/home-science-head.jpeg',
         bio: 'Ms. Rotich teaches practical life skills, equipping students with essential knowledge in cooking, sewing, and financial management.',
         quote: '“Practical skills are the foundation of independent living.”',
-        email: 'emily.rotich@cbckericho.ac.ke'
+        email: 'emily.rotich@lightjunior.ac.ke'
       },
       {
         name: 'Mr. Oscar Ouma',
@@ -108,7 +108,7 @@ const hods = [
         image: '/images/ict-head.jpeg',
         bio: 'Mr. Ouma is dedicated to advancing digital literacy, teaching students the essential skills of coding, technology, and digital citizenship.',
         quote: '“Digital skills are essential for the future.”',
-        email: 'oscar.ouma@cbckericho.ac.ke'
+        email: 'oscar.ouma@lightjunior.ac.ke'
       }
 ]
 
@@ -121,7 +121,7 @@ const support = [
         image: '/images/counselor.jpeg',
         bio: 'Ms. Akoth provides emotional and psychological support to students, helping them navigate challenges in school and personal life. She promotes mental well-being and resilience.',
         quote: '“A healthy mind is as important as a healthy body.”',
-        email: 'grace.akoth@cbckericho.ac.ke'
+        email: 'grace.akoth@lightjunior.ac.ke'
       },
       {
         name: 'Nurse Susan Chebet',
@@ -130,7 +130,7 @@ const support = [
         image: '/images/nurse.jpeg',
         bio: 'Nurse Chebet ensures the health and well-being of all students, offering first aid, health checks, and guidance on proper hygiene practices.',
         quote: '“Prevention is better than cure, and health is wealth.”',
-        email: 'susan.chebet@cbckericho.ac.ke'
+        email: 'susan.chebet@lightjunior.ac.ke'
       },
       {
         name: 'Mr. John Kiptui',
@@ -139,7 +139,7 @@ const support = [
         image: '/images/coach.jpeg',
         bio: 'Mr. Kiptui promotes physical fitness through various sports activities, ensuring students engage in exercise to maintain both physical health and mental wellness.',
         quote: '“A healthy body fosters a healthy mind.”',
-        email: 'john.kiptui@cbckericho.ac.ke'
+        email: 'john.kiptui@lightjunior.ac.ke'
       },
       {
         name: 'Ms. Alice Njeri',
@@ -148,7 +148,7 @@ const support = [
         image: '/images/needs.jpeg',
         bio: 'Ms. Njeri works with students with learning disabilities or other special needs, ensuring that they receive personalized support and a conducive learning environment.',
         quote: '“Every child deserves a chance to shine.”',
-        email: 'alice.njeri@cbckericho.ac.ke'
+        email: 'alice.njeri@lightjunior.ac.ke'
       },
       {
         name: 'Mr. Samuel Kiplagat',
@@ -157,7 +157,7 @@ const support = [
         image: '/images/student-affairs.jpeg',
         bio: 'Mr. Kiplagat ensures students adhere to the school’s behavioral guidelines while also providing mentorship and guidance to maintain a positive and respectful school culture.',
         quote: '“Respect and responsibility are the pillars of a thriving community.”',
-        email: 'samuel.kiplagat@cbckericho.ac.ke'
+        email: 'samuel.kiplagat@lightjunior.ac.ke'
       },
       {
         name: 'Ms. Maryline Cheruiyot',
@@ -166,7 +166,7 @@ const support = [
         image: '/images/parent-liaison.jpeg',
         bio: 'Ms. Cheruiyot acts as a bridge between parents and the school, ensuring effective communication and involvement of parents in their child’s academic and personal growth.',
         quote: '“Strong partnerships lead to student success.”',
-        email: 'maryline.cheruiyot@cbckericho.ac.ke'
+        email: 'maryline.cheruiyot@lightjunior.ac.ke'
       }
 ]
 
@@ -176,18 +176,18 @@ const studentLeaders = [
       title: 'Head Boy (Primary)',
       role: 'Leadership & Student Representation',
       image: '/images/head-boy-primary.jpeg',
-      bio: 'John leads the primary school student body, representing their interests and ensuring the students’ voices are heard in meetings with staff and administration.',
+      bio: 'John leads the  student body, representing their interests and ensuring the students’ voices are heard in meetings with staff and administration.',
       quote: '“A good leader leads by example, not by force.”',
-      email: 'john.kiprono.jr@cbckericho.ac.ke'
+      email: 'john.kiprono.jr@lightjunior.ac.ke'
     },
     {
       name: 'Grace Mwai',
       title: 'Head Girl (Primary)',
       role: 'Leadership & Student Representation',
       image: '/images/head-girl-primary.jpeg',
-      bio: 'Grace serves as the primary school head girl, supporting the head boy in guiding the students while promoting school values such as respect and responsibility.',
+      bio: 'Grace serves as the  head girl, supporting the head boy in guiding the students while promoting school values such as respect and responsibility.',
       quote: '“Leadership is about inspiring others to dream more, learn more, and become more.”',
-      email: 'grace.mwai@cbckericho.ac.ke'
+      email: 'grace.mwai@lightjunior.ac.ke'
     },
     {
       name: 'David Kiplimo',
@@ -196,16 +196,16 @@ const studentLeaders = [
       image: '/images/dhead-boy-primary.jpeg',
       bio: 'David supports the head boy in day-to-day leadership activities, assisting with organizing events and helping maintain discipline.',
       quote: '“Success is not the key to happiness; happiness is the key to success.”',
-      email: 'david.kiplimo@cbckericho.ac.ke'
+      email: 'david.kiplimo@lightjunior.ac.ke'
     },
     {
       name: 'Mercy Chepkemoi',
       title: 'Deputy Head Girl (Primary)',
       role: 'Student Leadership Support',
       image: '/images/dhead-girl-primary.jpeg',
-      bio: 'Mercy works closely with the head girl, ensuring the primary school students’ needs are met and organizing student welfare activities.',
+      bio: 'Mercy works closely with the head girl, ensuring the  students’ needs are met and organizing student welfare activities.',
       quote: '“The best way to predict the future is to create it.”',
-      email: 'mercy.chepkemoi@cbckericho.ac.ke'
+      email: 'mercy.chepkemoi@lightjunior.ac.ke'
     },
     {
       name: 'Samuel Nyaberi',
@@ -214,7 +214,7 @@ const studentLeaders = [
       image: '/images/head-boy-secondary.jpeg',
       bio: 'Samuel leads the junior secondary school student body, upholding school traditions, creating a positive school culture, and representing students in school meetings.',
       quote: '“A leader is one who knows the way, goes the way, and shows the way.”',
-      email: 'samuel.nyaberi@cbckericho.ac.ke'
+      email: 'samuel.nyaberi@lightjunior.ac.ke'
     },
     {
       name: 'Wanjiru Njiru',
@@ -223,7 +223,7 @@ const studentLeaders = [
       image: '/images/head-girl-secondary.jpeg',
       bio: 'Wanjiru serves as the head girl for junior secondary, empowering students and leading various initiatives that foster school unity and positive behavior.',
       quote: '“Leadership is not about being in charge. It’s about taking care of those in your charge.”',
-      email: 'wanjiru.njiru@cbckericho.ac.ke'
+      email: 'wanjiru.njiru@lightjunior.ac.ke'
     },
     {
       name: 'Peter Langat',
@@ -232,7 +232,7 @@ const studentLeaders = [
       image: '/images/dhead-boy-secondary.jpeg',
       bio: 'Peter assists the head boy with his duties, overseeing student activities, and ensuring that secondary students adhere to school regulations.',
       quote: '“The function of leadership is to produce more leaders, not more followers.”',
-      email: 'peter.langat@cbckericho.ac.ke'
+      email: 'peter.langat@lightjunior.ac.ke'
     },
     {
       name: 'Nancy Chege',
@@ -241,7 +241,7 @@ const studentLeaders = [
       image: '/images/dhead-girl-secondary.jpeg',
       bio: 'Nancy supports the head girl and plays an active role in student welfare, discipline, and organizing student-led activities.',
       quote: '“Leadership is not about being the best. It’s about making everyone else better.”',
-      email: 'nancy.chege@cbckericho.ac.ke'
+      email: 'nancy.chege@lightjunior.ac.ke'
     }
   ];
   

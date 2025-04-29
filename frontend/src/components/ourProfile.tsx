@@ -41,7 +41,7 @@ const OurProfile: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          Welcome to CBC Kericho School
+          Welcome to Light Junior Academy School
         </motion.h2>
 
         {/* Subheading */}
@@ -118,7 +118,7 @@ const OurProfile: React.FC = () => {
             <span className="font-semibold text-[#0C834E]">
               Creativity & Expression:
             </span>
-            Creativity is at the heart of education at CBC Kericho. Students are
+            Creativity is at the heart of education at Light Junior Academy. Students are
             encouraged to explore their artistic talents through music, drama,
             arts, and sports. These experiences help nurture their
             self-expression and foster emotional intelligence, which is as
@@ -166,7 +166,7 @@ const OurProfile: React.FC = () => {
             <br />
             <br />
             <span className="font-semibold">
-              – Director, CBC Kericho School
+              – Director, Light Junior Academy School
             </span>
           </p>
         </div>
@@ -183,7 +183,7 @@ const OurProfile: React.FC = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            “At CBC Kericho School, we don’t just prepare learners for the
+            “At Light Junior Academy School, we don’t just prepare learners for the
             future — we help them create it.”
           </motion.blockquote>
         </div>

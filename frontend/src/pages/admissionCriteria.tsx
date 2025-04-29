@@ -22,7 +22,7 @@ export default function AdmissionCriteria() {
             📝 Admission Criteria
           </h1>
           <p className="text-gray-600 max-w-2xl mx-auto md:text-lg">
-            Find out who is eligible to join CBC Kericho and the documents required for a successful application.
+            Find out who is eligible to join Light Junior Academy and the documents required for a successful application.
           </p>
         </motion.div>
 

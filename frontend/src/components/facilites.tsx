@@ -21,7 +21,7 @@ const facilities = [
   },
   {
     icon: "📈",
-    title: "KCPE Results",
+    title: "Exam Results",
     description:
       "Our students consistently perform excellently in national examinations, setting high academic standards.",
   },

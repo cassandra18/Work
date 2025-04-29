@@ -30,7 +30,7 @@ const AttendancePolicy: React.FC = () => {
                 📆 2. Attendance Policy
             </motion.h2>
             <motion.p {...fadeIn(0.1)} className="mb-4 text-gray-800 leading-relaxed md:text-lg">
-                At CBC Kericho Primary and Junior Secondary, regular attendance is essential for academic progress and holistic development. Learners are expected to attend all classes, activities, and assessments <strong>punctually</strong> and <strong>consistently</strong>.
+                At Light Junior Academy, regular attendance is essential for academic progress and holistic development. Learners are expected to attend all classes, activities, and assessments <strong>punctually</strong> and <strong>consistently</strong>.
             </motion.p>
             <ol className="space-y-3 text-gray-700 text-base md:text-lg">
                 {policies.map((item, index) => (

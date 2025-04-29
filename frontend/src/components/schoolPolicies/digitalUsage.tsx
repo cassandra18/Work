@@ -28,7 +28,7 @@ const DigitalUsagePolicy: React.FC = () => {
                 💻 6. Technology & Digital Usage Policy
             </motion.h2>
             <motion.p {...fadeIn(0.1)} className="mb-4 text-gray-800 leading-relaxed md:text-lg">
-                At CBC Kericho, we recognize the importance of technology in the educational process. Our policy ensures that <strong>digital tools</strong> are used in a <strong>safe and respectful manner</strong>, promoting learning while safeguarding students from potential <strong>online risks</strong>.
+                At Light Junior Academy, we recognize the importance of technology in the educational process. Our policy ensures that <strong>digital tools</strong> are used in a <strong>safe and respectful manner</strong>, promoting learning while safeguarding students from potential <strong>online risks</strong>.
             </motion.p>
 
             <ol className="space-y-3 text-gray-700 text-base md:text-lg">

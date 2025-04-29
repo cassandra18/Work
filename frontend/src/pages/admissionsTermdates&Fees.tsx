@@ -22,7 +22,7 @@ export default function KeyDatesFees() {
             📅 Key Dates & Fees
           </h1>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-            Stay informed on term calendars, school fees, and important payment details for CBC Kericho.
+            Stay informed on term calendars, school fees, and important payment details for Light Junior Academy.
           </p>
         </motion.div>
 
@@ -78,7 +78,7 @@ export default function KeyDatesFees() {
             <div>
               <h3 className="font-medium text-green-700 mb-1">🏦 Bank Information</h3>
               <p><strong>Bank Name:</strong> ABC Bank, Kericho Branch</p>
-              <p><strong>Account Name:</strong> CBC Kericho Primary</p>
+              <p><strong>Account Name:</strong> Light Junior Academy Primary</p>
               <p><strong>Account Number:</strong> 012345678901</p>
               <p><strong>Paybill Number (M-Pesa):</strong> 123456</p>
             </div>
@@ -101,8 +101,8 @@ export default function KeyDatesFees() {
                   </a>
                 </p>
                 <p className="font-semibold">
-                  <a href="mailto:bursar@cbckericho.co.ke">
-                  📧 bursar@cbckericho.co.ke
+                  <a href="mailto:bursar@lightjunior.co.ke">
+                  📧 bursar@lightjunior.co.ke
                   </a>
                 </p>
             </div>

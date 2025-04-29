@@ -143,7 +143,7 @@ export default function InternalTournaments() {
         <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12 text-base md:text-lg">
           Celebrating outstanding student achievements in sports, leadership,
           and personal growth. From MVPs to sports captains, meet the stars
-          making CBC Kericho shine!
+          making Light Junior Academy shine!
         </p>
 
         <div className="my-12 grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">

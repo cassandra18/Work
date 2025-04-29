@@ -27,7 +27,7 @@ const ParentalInvolvementPolicy: React.FC = () => {
                 💼 9. Parental Involvement Policy
             </motion.h2>
             <motion.p {...fadeIn(0.1)} className="mb-4 text-gray-800 leading-relaxed md:text-lg">
-                CBC Kericho encourages <strong>active participation from parents</strong> in the educational process through open communication, regular meetings, and collaboration in supporting the academic and personal growth of students.
+                Light Junior Academy encourages <strong>active participation from parents</strong> in the educational process through open communication, regular meetings, and collaboration in supporting the academic and personal growth of students.
             </motion.p>
             <ol className="space-y-3 text-gray-700 text-base md:text-lg">
                 {policies.map((item, index) => (

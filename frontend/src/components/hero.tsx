@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 import { Swiper as SwiperClass } from 'swiper';
 
 const slides = [
-    { id: 1, image: '/images/cbc-kericho.jpg', title: 'CBC-KERICHO', description: 'We are a school that is committed to providing quality education to our students', link: '/about/profile' },
+    { id: 1, image: '/images/cbc-kericho.jpg', title: 'Light Junior Academy', description: 'We are a school that is committed to providing quality education to our students', link: '/about/profile' },
     { id: 2, image: '/images/students.jpg', title: 'Vision, Mission and Values', description: 'Our vision is to provide quality education to our students', link: '/about/vision' },
     { id: 3, image: '/images/students-with-instruments.jpg', title: 'Clubs and Societies', description: 'We have a variety of clubs and societies that students can join', link: '/clubs' },
     { id: 4, image: '/images/teacher.jpg', title: 'Our Policies', description: 'Our policies are designed to ensure that our students get the best education', link: '/about/policies' }

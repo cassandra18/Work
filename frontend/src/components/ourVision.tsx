@@ -63,24 +63,17 @@ const OurVision: React.FC = () => {
       <div className="relative bg-gradient-to-br from-green-50 to-white py-12 px-6 md:px-16 rounded-xl shadow-md max-w-6xl mx-auto font-sans poppins-regular ">
         {/* Vision */}
         <motion.h1
-          className="text-3xl md:text-5xl font-extrabold mb-6 text-center text-green-800 tracking-tight"
+          className="text-3xl md:text-5xl font-extrabold mb-15 text-center text-green-800 tracking-tight"
           {...fadeIn()}
         >
           🌿 Our Vision
         </motion.h1>
 
         <motion.p
-          className="md:text-xl text-center mb-10 text-green-700"
-          {...fadeIn(0.1)}
-        >
-          <strong>CBC Kericho Primary School & Junior Secondary</strong>
-        </motion.p>
-
-        <motion.p
           className="md:text-lg mb-6 text-gray-700 leading-relaxed"
           {...fadeIn(0.2)}
         >
-          At <strong>CBC Kericho</strong>, we dream of a school where learning
+          At <strong>Light Junior Academy</strong>, we dream of a school where learning
           is fun, meaningful, and future-ready. A place where learners shine in
           their own unique ways, guided by caring mentors, and powered by
           curiosity and creativity.
@@ -198,7 +191,7 @@ const OurVision: React.FC = () => {
           className="kanit-regular-italic text-center md:text-xl text-gray-500 mt-14 border-t pt-6 border-green-200"
           {...fadeIn(0.7)}
         >
-          “At CBC Kericho, we don’t just teach for exams – we prepare young
+          “At Light Junior Academy, we don’t just teach for exams – we prepare young
           minds for life.”
         </motion.blockquote>
       </div>

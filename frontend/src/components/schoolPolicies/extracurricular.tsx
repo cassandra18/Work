@@ -28,7 +28,7 @@ const ExtracurricularPolicy: React.FC = () => {
                 🎨 7. Extracurricular Activities Policy
             </motion.h2>
             <motion.p {...fadeIn(0.1)} className="mb-4 text-gray-800 leading-relaxed md:text-lg">
-                At CBC Kericho, we believe in a well-rounded education where <strong>extracurricular activities</strong> play a vital role in student development. These activities, including <strong>sports, music, drama, and clubs</strong>, allow students to explore their talents and interests. Active participation also contributes to <strong>personal growth, team-building, and academic performance</strong>. However, it is important for students to maintain a balance between their <strong>extracurricular pursuits</strong> and <strong>academic responsibilities</strong>.
+                At Light Junior Academy, we believe in a well-rounded education where <strong>extracurricular activities</strong> play a vital role in student development. These activities, including <strong>sports, music, drama, and clubs</strong>, allow students to explore their talents and interests. Active participation also contributes to <strong>personal growth, team-building, and academic performance</strong>. However, it is important for students to maintain a balance between their <strong>extracurricular pursuits</strong> and <strong>academic responsibilities</strong>.
             </motion.p>
             <ol className="space-y-3 text-gray-700 text-base md:text-lg">
                 {policies.map((item, index) => (

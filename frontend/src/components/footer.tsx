@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
               loading="lazy"
             />
             <h2 className="xlg:text-2xl md:text-xl poppins-bold absolute bottom-0 left-1/2 -translate-x-1/2 whitespace-nowrap text-[#9dffd3]">
-              C.B.C KERICHO
+              Light Junior Academy
             </h2>
           </div>
         </div>
@@ -168,7 +168,7 @@ const Footer: React.FC = () => {
                   className=" flex items-center hover:text-[#9dffd3]"
                 >
                   <FaRegAddressCard className="mr-3" />
-                  About CKC Kericho
+                  About Light Junior Academy
                 </Link>
               </li>
               <li>
@@ -199,8 +199,7 @@ const Footer: React.FC = () => {
           Privacy Policy
         </Link>
         <p className="hover:text-[#a7c3b6]  ">
-          &copy; {new Date().getFullYear()} CBC Kericho Primary and Junior
-          Secondary School. All rights reserved.
+          &copy; {new Date().getFullYear()} Light Junior Academy. All rights reserved.
         </p>
       </div>
     </footer>

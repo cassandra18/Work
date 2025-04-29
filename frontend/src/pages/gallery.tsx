@@ -21,7 +21,7 @@ const galleryItems = [
   { src: "/images/robot-building.jpg", category: "Projects", alt: "Student Innovation" },
   { src: "/images/library.jpeg", category: "Facilities", alt: "Library Facilities" },
   { src: "/images/headteacher.jpeg", category: "Staff", alt: "Teachers Team" },
-  { src: "/videos/cbc-kericho.mp4", category: "School Life", alt: "CBC Kericho", isVideo: true },
+  { src: "/videos/cbc-kericho.mp4", category: "School Life", alt: "Light Junior Academy", isVideo: true },
 ];
 
 export default function Gallery() {

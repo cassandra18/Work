@@ -49,9 +49,9 @@ const Introduction: React.FC = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl font-extrabold text-[#0C834E]">Welcome to CBC Kericho Primary School</h2>
+          <h2 className="text-3xl font-extrabold text-[#0C834E]">Welcome to Light Junior Academy </h2>
           <p className='text-gray-700 leading-relaxed text-[17px]'>
-            CBC Kericho Primary School is a leading institution providing high-quality education under the Competency-Based Curriculum (CBC). Located in a serene environment, we are dedicated to nurturing young minds for a brighter tomorrow.
+            Light Junior Academy  is a leading institution providing high-quality education under the Competency-Based Curriculum (CBC). Located in a serene environment, we are dedicated to nurturing young minds for a brighter tomorrow.
             <br /><br />
             Education here goes beyond textbooks — we focus on hands-on learning, critical thinking, and real-life application. Learners are empowered to thrive, with supportive teachers guiding them every step of the way.
           </p>

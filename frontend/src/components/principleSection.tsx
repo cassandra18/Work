@@ -41,7 +41,7 @@ const PricipleSection: React.FC = () => {
                     </div>
                     
                     <p className="md:text-lg text-gray-800 leading-relaxed px-2 ">
-                    <span className='font-semibold'>Mr. John Kiprono</span> is the dedicated principal of CBC Kericho Primary and Junior Secondary School. 
+                    <span className='font-semibold'>Mr. John Kiprono</span> is the dedicated principal of Light Junior Academy. 
                     With a strong passion for education and over 15 years of leadership experience, he is committed 
                     to nurturing holistic learners through the CBC curriculum. Known for his firm yet approachable 
                     leadership style, Mr. Kiprono fosters a supportive learning environment where students, teachers, 

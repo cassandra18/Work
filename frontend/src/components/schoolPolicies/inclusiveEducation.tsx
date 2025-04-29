@@ -27,7 +27,7 @@ const InclusiveEducationPolicy: React.FC = () => {
                 🧑‍🎓 8. Inclusive Education & Equal Opportunity Policy
             </motion.h2>
             <motion.p {...fadeIn(0.1)} className="mb-4 text-gray-800 leading-relaxed md:text-lg">
-                At CBC Kericho, we are committed to providing an inclusive educational experience that supports learners with special needs and promotes <strong>gender equality</strong> and <strong>non-discrimination</strong> based on any background or belief.
+                At Light Junior Academy, we are committed to providing an inclusive educational experience that supports learners with special needs and promotes <strong>gender equality</strong> and <strong>non-discrimination</strong> based on any background or belief.
             </motion.p>
             <ol className="space-y-3 text-gray-700 text-base md:text-lg">
                 {policies.map((item, index) => (

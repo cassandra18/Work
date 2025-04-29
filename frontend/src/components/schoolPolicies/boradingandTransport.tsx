@@ -27,7 +27,7 @@ const BoardingTransportPolicy: React.FC = () => {
                 🏡 10. Boarding and School Transport Policy
             </motion.h2>
             <motion.p {...fadeIn(0.1)} className="mb-4 text-gray-800 leading-relaxed md:text-lg">
-                CBC Kericho ensures the <strong>safety</strong> and <strong>well-being</strong> of students in boarding and during their journeys with clear rules and routines for boarding house life and school transport.
+                Light Junior Academy ensures the <strong>safety</strong> and <strong>well-being</strong> of students in boarding and during their journeys with clear rules and routines for boarding house life and school transport.
             </motion.p>
             <ol className="space-y-3 text-gray-700 text-base md:text-lg">
                 {policies.map((item, index) => (

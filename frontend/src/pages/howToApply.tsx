@@ -5,7 +5,7 @@ const steps = [
   {
     title: "1. Visit the School or Website",
     description:
-      "Learn more about CBC Kericho by visiting us or browsing our website.",
+      "Learn more about Light Junior Academy by visiting us or browsing our website.",
     icon: "🏫",
   },
   {
@@ -24,7 +24,7 @@ const steps = [
     description: (
       <>
         Drop it off at the school office or email it to{" "}
-        <strong>admissions@cbckericho.ac.ke</strong>.
+        <strong>admissions@lightjunior.ac.ke</strong>.
       </>
     ),
     icon: "📨",
@@ -56,7 +56,7 @@ export default function HowToApply() {
           📬 How to Apply
         </h1>
         <p className="text-gray-600 max-w-2xl mx-auto md:text-lg">
-          Follow these simple steps to join CBC Kericho and become part of a
+          Follow these simple steps to join Light Junior Academy and become part of a
           nurturing learning environment.
         </p>
       </motion.div>
@@ -100,8 +100,8 @@ export default function HowToApply() {
           <a href="tel:+254700000000">📞 +254 700 000 000</a>
         </p>
         <p className="font-semibold">
-          <a href="mailto:admissions@cbckericho.co.ke">
-            📧 admissions@cbckericho.co.ke
+          <a href="mailto:admissions@lightjunior.co.ke">
+            📧 admissions@lightjunior.co.ke
           </a>
         </p>
       </div>

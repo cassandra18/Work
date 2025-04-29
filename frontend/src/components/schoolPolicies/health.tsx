@@ -28,7 +28,7 @@ const HealthSafetyPolicy: React.FC = () => {
                 🏥 5. Health & Safety Policy
             </motion.h2>
             <motion.p {...fadeIn(0.1)} className="mb-4 text-gray-800 leading-relaxed md:text-lg">
-                CBC Kericho takes the health and safety of its students very seriously. We ensure a <strong>safe and secure environment</strong> where students can thrive, with clear guidelines for <strong>emergency situations</strong> and <strong>medical assistance</strong>.
+                Light Junior Academy takes the health and safety of its students very seriously. We ensure a <strong>safe and secure environment</strong> where students can thrive, with clear guidelines for <strong>emergency situations</strong> and <strong>medical assistance</strong>.
             </motion.p>
 
             <ol className="space-y-3 text-gray-700 text-base md:text-lg">

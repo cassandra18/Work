@@ -21,7 +21,7 @@ const PolicyAcknowledgement: React.FC = () => {
                 ✅ Policy Acknowledgement
             </motion.h2>
             <motion.p {...fadeIn(0.1)} className="mb-6 text-gray-800 leading-relaxed md:text-lg text-center">
-                Thank you for reviewing the policies at CBC Kericho. To ensure understanding and commitment, we kindly ask all parents and students to acknowledge these policies. Please download the full policies document and sign the acknowledgment form below.
+                Thank you for reviewing the policies at Light Junior Academy. To ensure understanding and commitment, we kindly ask all parents and students to acknowledge these policies. Please download the full policies document and sign the acknowledgment form below.
             </motion.p>
             <motion.div
                 {...fadeIn(0.2)}

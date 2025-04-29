@@ -32,7 +32,7 @@ const CodeOfConduct: React.FC = () => {
                📏 1. Code of Conduct
             </motion.h2>
             <motion.p {...fadeIn(0.1)} className="mb-4 text-gray-800 leading-relaxed md:text-lg">
-                Our Code of Conduct outlines the values and behaviors expected of all learners, staff, and visitors at CBC Kericho. It is rooted in <strong>respect</strong>, <strong>responsibility</strong>, and <strong>community</strong>—key pillars of the Competency-Based Curriculum.
+                Our Code of Conduct outlines the values and behaviors expected of all learners, staff, and visitors at Light Junior Academy. It is rooted in <strong>respect</strong>, <strong>responsibility</strong>, and <strong>community</strong>—key pillars of the Competency-Based Curriculum.
             </motion.p>
             <ol className="space-y-3 list-decimal list-inside">
                 {rules.map((rule, index) => (
