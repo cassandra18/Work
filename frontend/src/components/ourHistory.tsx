@@ -13,31 +13,34 @@ const milestones = [
     year: "1998",
     title: "School Founded",
     emoji: "🏫",
-    description: "Started with just 2 classrooms and a big dream. A small group of dedicated teachers laid the foundation for a nurturing and excellence-driven academic environment. Despite humble beginnings, the vision for holistic education was clear from the start.",
+    description:
+      "Started with just 2 classrooms and a big dream. A small group of dedicated teachers laid the foundation for a nurturing and excellence-driven academic environment. Despite humble beginnings, the vision for holistic education was clear from the start.",
     image: "/images/est.jpeg",
   },
   {
     year: "2005",
     title: "First KCPE Top Scorer",
     emoji: "🏆",
-    description: "A proud year as one of our students scored in the top 1% nationally in KCPE. This milestone highlighted our commitment to academic excellence and inspired future generations to aim even higher.",
+    description:
+      "A proud year as one of our students scored in the top 1% nationally in KCPE. This milestone highlighted our commitment to academic excellence and inspired future generations to aim even higher.",
     image: "/images/celebration.jpeg",
   },
   {
     year: "2012",
     title: "New Science Wing",
     emoji: "🔬",
-    description: "We expanded with the construction of a fully equipped science wing featuring state-of-the-art laboratories for Biology, Chemistry, and Physics. This investment encouraged innovation, hands-on learning, and curiosity among students.",
+    description:
+      "We expanded with the construction of a fully equipped science wing featuring state-of-the-art laboratories for Biology, Chemistry, and Physics. This investment encouraged innovation, hands-on learning, and curiosity among students.",
     image: "/images/lab.jpeg",
   },
   {
     year: "2020",
     title: "Digital Learning",
     emoji: "💻",
-    description: "In response to the evolving world, we launched our digital learning program complete with tablets, smartboards, and interactive lessons. This marked a new era of blended education, making learning more accessible and engaging for all students.",
-    image: "/images/digital.jpeg"
+    description:
+      "In response to the evolving world, we launched our digital learning program complete with tablets, smartboards, and interactive lessons. This marked a new era of blended education, making learning more accessible and engaging for all students.",
+    image: "/images/digital.jpeg",
   },
-  
 ];
 
 const facts = [
@@ -85,17 +88,36 @@ const OurHistory: React.FC = () => {
       </h2>
 
       {/*Animated timeline  */}
-      <div className="max-w-7xl mx-auto relative border-l-4 border-green-500 pl-6 rounded-lg shadow-lg p-6">
-        {milestones.map((milestone, index) => (
-          <motion.div
-            key={index}
-            className="mb-10 relative"
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: index * 0.2 }}
-          >
-            <div className="absolute -left-4 top-1.5 w-9 h-9 text-center text-2xl bg-gray-400 rounded-full shadow-md">
+      <div className="max-w-7xl mx-auto relative shadow-lg rounded-lg p-6 mb-10 bg-gradient-to-b from-white/50 to-gray-300">
+        {/* {milestones.map((milestone, index) => ( */}
+        <motion.div
+          className="mb-10 relative"
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <p>
+          Light junior School is a Christian based institution .It was founded
+          under Biblical principles in <strong>2004 by pastor Stephen Cheptiony</strong>, who is
+          currently a student of Masters of Divinty at Trinity Evangelical
+          Divinity school Deerfield IL. Also Pr. Stephen has been admitted to
+          PhD Intercultural Studies. 
+          
+         <p className="pt-2"></p>Light junior School is located at Karandili
+          village in rural part of northern Kenya. <strong>It begun with 18 pupils to 224, </strong>
+          and <strong>currently 112 pupils </strong> after COVID-19. It's main goal is to
+          serve Christ through the needy and orphan Children by providing
+          quality education and training them to know God . 
+          
+          <p className="pt-2"></p>The school nurtures
+          Children to be future servant leaders who fear and honor God . Through
+          it's mission of children ministry the Gospel has reached the entire
+          community and served needy widows.The school is managed by qualified
+          trained teaching staff and board of directors. Christ is the center in
+          the school curriculum.
+          </p>
+          {/* <div className="absolute -left-4 top-1.5 w-9 h-9 text-center text-2xl bg-gray-400 rounded-full shadow-md">
               {milestone.emoji}
             </div>
             <h3 className="md:text-xl text-lg font-bold text-green-700 pl-9">
@@ -106,7 +128,7 @@ const OurHistory: React.FC = () => {
             </p>
 
             {/*Modal preview of the image  */}
-            {selectedImage && (
+          {/* {selectedImage && (
               <div className="fixed inset-0 bg-gradient-to-br from-[#9dffd3] to-white bg-opacity-70 flex items-center justify-center z-50">
                 <div className="relative">
                   <button
@@ -136,13 +158,13 @@ const OurHistory: React.FC = () => {
                 loading="lazy"
                 className="w-full h-full object-cover"
               />
-            </motion.div>
-          </motion.div>
-        ))}
+            </motion.div> */}
+        </motion.div>
+        {/* ))} */}
       </div>
 
       {/* Fun facts section */}
-      <div className="bg-gradient-to-b from-green-100 to-white-50 mt-20 py-8 md:py-16 px-4 md:px-6 poppins-regular">
+      {/* <div className="bg-gradient-to-b from-green-100 to-white-50 mt-20 py-8 md:py-16 px-4 md:px-6 poppins-regular">
         <h3 className="text-3xl md:text-5xl font-bold text-center text-green-900 mb-12 drop-shadow-md">
           🌟 Fun Facts About Our School
         </h3>
@@ -177,10 +199,10 @@ const OurHistory: React.FC = () => {
             </Tilt>
           ))}
         </div>
-      </div>
+      </div> */}
 
       {/* Testimonials / Quote Carousel */}
-      <div className=" flex flex-col lg:flex-row items-center justify-evenly gap-6 py-8 md:py-16 px-4 md:px-6 poppins-regular bg-gradient-to-b to-[#9dffd37b] from-white"
+      {/* <div className=" flex flex-col lg:flex-row items-center justify-evenly gap-6 py-8 md:py-16 px-4 md:px-6 poppins-regular bg-gradient-to-b to-[#9dffd37b] from-white"
       >
         <div>
         <h3 className="text-3xl md:text-5xl font-bold text-center text-green-800 mb-12 drop-shadow-sm">
@@ -195,8 +217,8 @@ const OurHistory: React.FC = () => {
           autoplay={{ delay: 5000, disableOnInteraction: false }}
           pagination={{ clickable: true }}
           className="md:max-w-2xl max-w-sm mx-auto mb-10"
-        >
-          {testimonials.map((testimonial, index) => (
+        > */}
+      {/* {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index}>
               <motion.div
                 key={index}
@@ -216,11 +238,10 @@ const OurHistory: React.FC = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        </div>
+        </div> */}
       {/* Call to Action */}
-      <CTA/>
-      </div>
-
+      {/* <CTA/>
+      </div> */}
     </div>
   );
 };
